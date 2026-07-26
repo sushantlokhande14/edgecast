@@ -14,11 +14,13 @@ import (
 
 	"github.com/sushantlokhande14/edgecast/internal/admin"
 	"github.com/sushantlokhande14/edgecast/internal/expctl"
+	"github.com/sushantlokhande14/edgecast/internal/hlspath"
 	"github.com/sushantlokhande14/edgecast/internal/loadgen"
 	"github.com/sushantlokhande14/edgecast/internal/media"
 	"github.com/sushantlokhande14/edgecast/internal/moqclient"
 	"github.com/sushantlokhande14/edgecast/internal/netem"
 	"github.com/sushantlokhande14/edgecast/internal/relay"
+	"github.com/sushantlokhande14/edgecast/internal/webrtcpath"
 )
 
 // link is the process-wide emulated access/backbone link. Every role gets
@@ -44,6 +46,16 @@ func main() {
 		run = runMoqPub
 	case "moq-sub":
 		run = runMoqSub
+	case "webrtc-sfu":
+		run = runWebrtcSFU
+	case "webrtc-pub":
+		run = runWebrtcPub
+	case "webrtc-sub":
+		run = runWebrtcSub
+	case "hls-origin":
+		run = runHlsOrigin
+	case "hls-client":
+		run = runHlsClient
 	case "expctl":
 		run = func(ctx context.Context, _ *admin.Server) error {
 			return expctl.Run(ctx, env("MATRIX", "/app/scenarios/smoke.yaml"), env("OUT", "/results"))
@@ -63,7 +75,8 @@ func main() {
 
 func usage() {
 	fmt.Fprintln(os.Stderr, `usage: edgecast <role>
-roles: relay | moq-pub | moq-sub | expctl
+roles: relay | moq-pub | moq-sub | webrtc-sfu | webrtc-pub | webrtc-sub |
+       hls-origin | hls-client | expctl
 configuration is env-var driven; see docs/04-setup.md`)
 }
 
@@ -117,6 +130,58 @@ func envInt(key string, def int) int {
 		return n
 	}
 	return def
+}
+
+func runWebrtcSFU(ctx context.Context, adm *admin.Server) error {
+	sfu := webrtcpath.NewSFU()
+	sfu.RegisterHandlers(adm)
+	<-ctx.Done()
+	return nil
+}
+
+func runWebrtcPub(ctx context.Context, adm *admin.Server) error {
+	webrtcpath.RunPublisher(ctx, webrtcpath.PubConfig{
+		SFUAddr:     env("SFU_ADDR", "webrtc-sfu:8080"),
+		BitrateKbps: envInt("BITRATE_KBPS", 2500),
+		Media: media.Config{
+			FPS:         envInt("FPS", 30),
+			GroupFrames: envInt("GROUP_FRAMES", 30),
+			KeyframeMul: 4.0,
+		},
+	})
+	return nil
+}
+
+func runWebrtcSub(ctx context.Context, adm *admin.Server) error {
+	sfuAddr := env("SFU_ADDR", "webrtc-sfu:8080")
+	mgr := loadgen.NewManager("webrtc", env("REGION", "local"), envInt("SESSIONS", 10),
+		func(ctx context.Context, rec *loadgen.Recorder) error {
+			return webrtcpath.Subscribe(ctx, link, sfuAddr, rec)
+		})
+	mgr.RegisterHandlers(adm)
+	mgr.Start(ctx)
+	<-ctx.Done()
+	return nil
+}
+
+func runHlsOrigin(ctx context.Context, adm *admin.Server) error {
+	o := hlspath.NewOrigin()
+	o.RegisterHandlers(adm)
+	o.Run(ctx)
+	return nil
+}
+
+func runHlsClient(ctx context.Context, adm *admin.Server) error {
+	originAddr := env("ORIGIN_ADDR", "hls-origin:8080")
+	mgr := loadgen.NewManager("hls", env("REGION", "local"), envInt("SESSIONS", 10),
+		func(ctx context.Context, rec *loadgen.Recorder) error {
+			return hlspath.RunSession(ctx, link, originAddr, rec)
+		})
+	mgr.Configure(hlspath.ConfigureRecorder)
+	mgr.RegisterHandlers(adm)
+	mgr.Start(ctx)
+	<-ctx.Done()
+	return nil
 }
 
 func envFloat(key string, def float64) float64 {
