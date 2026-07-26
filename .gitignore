@@ -1,0 +1,19 @@
+# binaries
+/bin/
+*.exe
+
+# experiment output (raw per-run JSON can get large; summaries are committed)
+/results/raw/
+
+# local env overrides
+.env
+.env.local
+
+# editor noise
+.vscode/
+.idea/
+*.swp
+
+# grafana/prometheus local state (mounted volumes)
+/deploy/grafana/data/
+/deploy/prometheus/data/
