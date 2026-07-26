@@ -1,0 +1,29 @@
+global:
+  scrape_interval: 5s
+  evaluation_interval: 15s
+
+scrape_configs:
+  - job_name: edgecast
+    static_configs:
+      - targets:
+          - relay-us-west:8080
+          - relay-us-east:8080
+          - relay-eu-central:8080
+          - relay-ap-south:8080
+          - relay-ap-east:8080
+          - moq-pub:8080
+          - moq-sub-us-west:8080
+          - moq-sub-us-east:8080
+          - moq-sub-eu-central:8080
+          - moq-sub-ap-south:8080
+          - moq-sub-ap-east:8080
+          - webrtc-sfu:8080
+          - webrtc-pub:8080
+          - webrtc-sub-a:8080
+          - webrtc-sub-b:8080
+          - hls-origin:8080
+          - hls-client-a:8080
+          - hls-client-b:8080
+  - job_name: prometheus
+    static_configs:
+      - targets: ["localhost:9090"]

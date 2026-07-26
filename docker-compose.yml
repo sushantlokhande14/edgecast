@@ -1,0 +1,168 @@
+# EdgeCast testbed topology: 5-region MoQ relay tree, WebRTC SFU path, HLS
+# path, observability, and the experiment controller.
+#
+#   docker compose up -d --build          # bring up everything
+#   docker compose run --rm expctl        # run the smoke matrix
+#   MATRIX=/app/scenarios/full.yaml docker compose run --rm -e MATRIX expctl
+#
+# Grafana: http://localhost:3000  Prometheus: http://localhost:9090
+name: edgecast
+
+x-service: &svc
+  image: edgecast:local
+  restart: unless-stopped
+  healthcheck:
+    test: ["CMD", "curl", "-sf", "http://localhost:8080/healthz"]
+    interval: 10s
+    timeout: 3s
+    start_period: 10s
+    retries: 3
+
+services:
+  # ---- MoQ path: origin + edge relays (backbone RTT on the upstream dial) ----
+  relay-us-west:
+    <<: *svc
+    build: .
+    command: relay
+    environment: { REGION: us-west }
+
+  relay-us-east:
+    <<: *svc
+    command: relay
+    environment: { REGION: us-east, UPSTREAM: "relay-us-west:4443", REGION_RTT_MS: "35" }
+    depends_on: [relay-us-west]
+
+  relay-eu-central:
+    <<: *svc
+    command: relay
+    environment: { REGION: eu-central, UPSTREAM: "relay-us-west:4443", REGION_RTT_MS: "70" }
+    depends_on: [relay-us-west]
+
+  relay-ap-south:
+    <<: *svc
+    command: relay
+    environment: { REGION: ap-south, UPSTREAM: "relay-us-west:4443", REGION_RTT_MS: "110" }
+    depends_on: [relay-us-west]
+
+  relay-ap-east:
+    <<: *svc
+    command: relay
+    environment: { REGION: ap-east, UPSTREAM: "relay-us-west:4443", REGION_RTT_MS: "90" }
+    depends_on: [relay-us-west]
+
+  moq-pub:
+    <<: *svc
+    command: moq-pub
+    environment: { RELAY_ADDR: "relay-us-west:4443", BITRATE_KBPS: "1000", ABR: "true" }
+    depends_on: [relay-us-west]
+
+  # ---- MoQ subscribers: one load generator per region, 5ms access RTT ----
+  moq-sub-us-west:
+    <<: *svc
+    command: moq-sub
+    environment: { REGION: us-west, RELAY_ADDR: "relay-us-west:4443", SESSIONS: "20", REGION_RTT_MS: "5" }
+    depends_on: [relay-us-west, moq-pub]
+
+  moq-sub-us-east:
+    <<: *svc
+    command: moq-sub
+    environment: { REGION: us-east, RELAY_ADDR: "relay-us-east:4443", SESSIONS: "20", REGION_RTT_MS: "5" }
+    depends_on: [relay-us-east, moq-pub]
+
+  moq-sub-eu-central:
+    <<: *svc
+    command: moq-sub
+    environment: { REGION: eu-central, RELAY_ADDR: "relay-eu-central:4443", SESSIONS: "20", REGION_RTT_MS: "5" }
+    depends_on: [relay-eu-central, moq-pub]
+
+  moq-sub-ap-south:
+    <<: *svc
+    command: moq-sub
+    environment: { REGION: ap-south, RELAY_ADDR: "relay-ap-south:4443", SESSIONS: "20", REGION_RTT_MS: "5" }
+    depends_on: [relay-ap-south, moq-pub]
+
+  moq-sub-ap-east:
+    <<: *svc
+    command: moq-sub
+    environment: { REGION: ap-east, RELAY_ADDR: "relay-ap-east:4443", SESSIONS: "20", REGION_RTT_MS: "5" }
+    depends_on: [relay-ap-east, moq-pub]
+
+  # ---- WebRTC path: SFU in us-west; viewers at us-east / eu distance ----
+  webrtc-sfu:
+    <<: *svc
+    command: webrtc-sfu
+    depends_on: [relay-us-west]
+
+  webrtc-pub:
+    <<: *svc
+    command: webrtc-pub
+    environment: { SFU_ADDR: "webrtc-sfu:8080", BITRATE_KBPS: "2500" }
+    depends_on: [webrtc-sfu]
+
+  webrtc-sub-a:
+    <<: *svc
+    command: webrtc-sub
+    environment: { REGION: us-east, SFU_ADDR: "webrtc-sfu:8080", SESSIONS: "10", REGION_RTT_MS: "35" }
+    depends_on: [webrtc-sfu, webrtc-pub]
+
+  webrtc-sub-b:
+    <<: *svc
+    command: webrtc-sub
+    environment: { REGION: eu-central, SFU_ADDR: "webrtc-sfu:8080", SESSIONS: "10", REGION_RTT_MS: "70" }
+    depends_on: [webrtc-sfu, webrtc-pub]
+
+  # ---- HLS path: origin in us-west; viewers at us-east / eu distance ----
+  hls-origin:
+    <<: *svc
+    command: hls-origin
+    depends_on: [relay-us-west]
+
+  hls-client-a:
+    <<: *svc
+    command: hls-client
+    environment: { REGION: us-east, ORIGIN_ADDR: "hls-origin:8080", SESSIONS: "10", REGION_RTT_MS: "35" }
+    depends_on: [hls-origin]
+
+  hls-client-b:
+    <<: *svc
+    command: hls-client
+    environment: { REGION: eu-central, ORIGIN_ADDR: "hls-origin:8080", SESSIONS: "10", REGION_RTT_MS: "70" }
+    depends_on: [hls-origin]
+
+  # ---- Observability ----
+  prometheus:
+    image: prom/prometheus:v2.55.1
+    restart: unless-stopped
+    command:
+      - --config.file=/etc/prometheus/prometheus.yml
+      - --storage.tsdb.retention.time=2d
+    volumes:
+      - ./deploy/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    ports:
+      - "9090:9090"
+
+  grafana:
+    image: grafana/grafana:11.4.0
+    restart: unless-stopped
+    environment:
+      GF_AUTH_ANONYMOUS_ENABLED: "true"
+      GF_AUTH_ANONYMOUS_ORG_ROLE: Admin
+      GF_AUTH_DISABLE_LOGIN_FORM: "true"
+    volumes:
+      - ./deploy/grafana/provisioning:/etc/grafana/provisioning:ro
+      - ./deploy/grafana/dashboards:/var/lib/grafana/dashboards:ro
+    ports:
+      - "3000:3000"
+    depends_on: [prometheus]
+
+  # ---- Experiment controller (run on demand) ----
+  expctl:
+    image: edgecast:local
+    profiles: [tools]
+    command: expctl
+    environment:
+      MATRIX: /app/scenarios/smoke.yaml
+      OUT: /results
+    volumes:
+      - ./results:/results
+      - ./scenarios:/app/scenarios:ro

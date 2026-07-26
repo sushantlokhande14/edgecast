@@ -1,0 +1,85 @@
+{
+  "uid": "edgecast-compare",
+  "title": "EdgeCast / Protocol Comparison",
+  "tags": ["edgecast"],
+  "timezone": "browser",
+  "schemaVersion": 39,
+  "version": 1,
+  "refresh": "10s",
+  "time": { "from": "now-30m", "to": "now" },
+  "panels": [
+    {
+      "id": 1, "type": "stat", "title": "Active sessions",
+      "datasource": { "type": "prometheus", "uid": "prom" },
+      "gridPos": { "h": 6, "w": 8, "x": 0, "y": 0 },
+      "fieldConfig": { "defaults": { "unit": "none" }, "overrides": [] },
+      "options": { "reduceOptions": { "calcs": ["lastNotNull"] }, "textMode": "value_and_name" },
+      "targets": [{ "refId": "A", "expr": "sum by (protocol) (edgecast_sub_sessions_active)", "legendFormat": "{{protocol}}" }]
+    },
+    {
+      "id": 2, "type": "stat", "title": "Startup p50 (last 30m of joins)",
+      "datasource": { "type": "prometheus", "uid": "prom" },
+      "gridPos": { "h": 6, "w": 8, "x": 8, "y": 0 },
+      "fieldConfig": { "defaults": { "unit": "s", "decimals": 2 }, "overrides": [] },
+      "options": { "reduceOptions": { "calcs": ["lastNotNull"] }, "textMode": "value_and_name" },
+      "targets": [{ "refId": "A", "expr": "histogram_quantile(0.50, sum by (le, protocol) (increase(edgecast_sub_startup_seconds_bucket[30m])))", "legendFormat": "{{protocol}}" }]
+    },
+    {
+      "id": 3, "type": "stat", "title": "Startup p95 (last 30m of joins)",
+      "datasource": { "type": "prometheus", "uid": "prom" },
+      "gridPos": { "h": 6, "w": 8, "x": 16, "y": 0 },
+      "fieldConfig": { "defaults": { "unit": "s", "decimals": 2 }, "overrides": [] },
+      "options": { "reduceOptions": { "calcs": ["lastNotNull"] }, "textMode": "value_and_name" },
+      "targets": [{ "refId": "A", "expr": "histogram_quantile(0.95, sum by (le, protocol) (increase(edgecast_sub_startup_seconds_bucket[30m])))", "legendFormat": "{{protocol}}" }]
+    },
+    {
+      "id": 4, "type": "timeseries", "title": "Media throughput by protocol",
+      "datasource": { "type": "prometheus", "uid": "prom" },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 6 },
+      "fieldConfig": { "defaults": { "unit": "bps", "custom": { "fillOpacity": 12 } }, "overrides": [] },
+      "targets": [{ "refId": "A", "expr": "sum by (protocol) (rate(edgecast_sub_bytes_total[$__rate_interval])) * 8", "legendFormat": "{{protocol}}" }]
+    },
+    {
+      "id": 5, "type": "timeseries", "title": "Media units received /s (frames, packets, segments)",
+      "datasource": { "type": "prometheus", "uid": "prom" },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 6 },
+      "fieldConfig": { "defaults": { "unit": "ops", "custom": { "fillOpacity": 12 } }, "overrides": [] },
+      "targets": [{ "refId": "A", "expr": "sum by (protocol) (rate(edgecast_sub_frames_total[$__rate_interval]))", "legendFormat": "{{protocol}}" }]
+    },
+    {
+      "id": 6, "type": "timeseries", "title": "End-to-end latency p50",
+      "datasource": { "type": "prometheus", "uid": "prom" },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 14 },
+      "fieldConfig": { "defaults": { "unit": "s", "custom": { "fillOpacity": 12 } }, "overrides": [] },
+      "targets": [{ "refId": "A", "expr": "histogram_quantile(0.50, sum by (le, protocol) (rate(edgecast_sub_e2e_seconds_bucket[$__rate_interval])))", "legendFormat": "{{protocol}}" }]
+    },
+    {
+      "id": 7, "type": "timeseries", "title": "End-to-end latency p95",
+      "datasource": { "type": "prometheus", "uid": "prom" },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 14 },
+      "fieldConfig": { "defaults": { "unit": "s", "custom": { "fillOpacity": 12 } }, "overrides": [] },
+      "targets": [{ "refId": "A", "expr": "histogram_quantile(0.95, sum by (le, protocol) (rate(edgecast_sub_e2e_seconds_bucket[$__rate_interval])))", "legendFormat": "{{protocol}}" }]
+    },
+    {
+      "id": 8, "type": "timeseries", "title": "Stalled time per wall-clock second",
+      "datasource": { "type": "prometheus", "uid": "prom" },
+      "gridPos": { "h": 8, "w": 12, "x": 0, "y": 22 },
+      "fieldConfig": { "defaults": { "unit": "none", "custom": { "fillOpacity": 12 } }, "overrides": [] },
+      "targets": [{ "refId": "A", "expr": "sum by (protocol) (rate(edgecast_sub_stalled_seconds_total[$__rate_interval]))", "legendFormat": "{{protocol}}" }]
+    },
+    {
+      "id": 9, "type": "timeseries", "title": "Stall events per minute",
+      "datasource": { "type": "prometheus", "uid": "prom" },
+      "gridPos": { "h": 8, "w": 12, "x": 12, "y": 22 },
+      "fieldConfig": { "defaults": { "unit": "none", "custom": { "fillOpacity": 12 } }, "overrides": [] },
+      "targets": [{ "refId": "A", "expr": "60 * sum by (protocol) (rate(edgecast_sub_stalls_total[$__rate_interval]))", "legendFormat": "{{protocol}}" }]
+    },
+    {
+      "id": 10, "type": "timeseries", "title": "Session errors per minute",
+      "datasource": { "type": "prometheus", "uid": "prom" },
+      "gridPos": { "h": 8, "w": 24, "x": 0, "y": 30 },
+      "fieldConfig": { "defaults": { "unit": "none", "custom": { "fillOpacity": 12 } }, "overrides": [] },
+      "targets": [{ "refId": "A", "expr": "60 * sum by (protocol) (rate(edgecast_sub_session_errors_total[$__rate_interval]))", "legendFormat": "{{protocol}}" }]
+    }
+  ]
+}
