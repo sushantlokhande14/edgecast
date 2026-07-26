@@ -42,7 +42,7 @@ func RunSession(ctx context.Context, link *netem.State, originAddr string, rec *
 		Timeout:   60 * time.Second,
 		Transport: &http.Transport{DialContext: link.DialContext},
 	}
-	base := "http://" + originAddr
+	base := "http://" + originAddr + "/hls"
 
 	renditions, err := fetchMaster(ctx, client, base)
 	if err != nil {

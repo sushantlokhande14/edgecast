@@ -98,7 +98,7 @@ func (o *Origin) produce() {
 }
 
 func (o *Origin) RegisterHandlers(a *admin.Server) {
-	a.Handle("GET /master.m3u8", func(w http.ResponseWriter, r *http.Request) {
+	a.Handle("GET /hls/master.m3u8", func(w http.ResponseWriter, r *http.Request) {
 		var b strings.Builder
 		b.WriteString("#EXTM3U\n")
 		for _, rd := range Renditions {
@@ -107,7 +107,7 @@ func (o *Origin) RegisterHandlers(a *admin.Server) {
 		w.Header().Set("Content-Type", "application/vnd.apple.mpegurl")
 		_, _ = w.Write([]byte(b.String()))
 	})
-	a.Handle("GET /{rendition}/live.m3u8", func(w http.ResponseWriter, r *http.Request) {
+	a.Handle("GET /hls/{rendition}/live.m3u8", func(w http.ResponseWriter, r *http.Request) {
 		rend := r.PathValue("rendition")
 		o.mu.Lock()
 		ring := append([]segment(nil), o.segs[rend]...)
@@ -131,7 +131,7 @@ func (o *Origin) RegisterHandlers(a *admin.Server) {
 		w.Header().Set("Content-Type", "application/vnd.apple.mpegurl")
 		_, _ = w.Write([]byte(b.String()))
 	})
-	a.Handle("GET /{rendition}/{seg}", func(w http.ResponseWriter, r *http.Request) {
+	a.Handle("GET /hls/{rendition}/{seg}", func(w http.ResponseWriter, r *http.Request) {
 		rend := r.PathValue("rendition")
 		name := r.PathValue("seg")
 		if !strings.HasPrefix(name, "seg") || !strings.HasSuffix(name, ".ts") {
