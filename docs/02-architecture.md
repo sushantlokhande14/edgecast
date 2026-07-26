@@ -53,7 +53,7 @@ flowchart TB
     PR -. scrape .-> MOQ & RTC & HLS & EX
 ```
 
-Regions are simulated by shaping each edge relay's and each subscriber's network interface with `tc netem` (delay to model geographic distance, plus whatever the active scenario adds on the access side).
+Regions are simulated by shaping each edge relay's dial to the origin and each subscriber's dial to its regional relay (a base RTT models geographic distance, plus whatever the active scenario adds on the access side). Shaping happens in a userspace link emulator described in 2.6.
 
 ## 2.3 MoQ-style protocol (simplified)
 
@@ -98,12 +98,21 @@ The publisher offers a fixed ladder (250 / 500 / 1000 / 2500 / 5000 kbps). Adapt
 
 ## 2.6 Network emulation and experiment control
 
-Every client-side and edge container runs a **netem agent**: an HTTP endpoint inside the container that applies `tc qdisc` (netem for delay/jitter/loss + tbf for rate caps) to its own interface. `expctl` never touches Docker; it drives impairment and session lifecycle purely over HTTP on the compose network:
+The original plan was kernel `tc netem`, but Docker Desktop's WSL2 kernel does not ship `sch_netem` (discovered by an early feasibility probe; see the stage-3 commit). The testbed therefore includes a **userspace link emulator** (`internal/netem`), which turned out to be a better fit for a reproducible testbed anyway: it runs identically on any Docker host, needs no kernel modules or NET_ADMIN, and its behavior is unit-testable Go.
+
+How it works:
+
+- An impairing `net.PacketConn` wraps each client-side UDP socket. Egress and ingress each pass through a **shaper**: token-bucket serialization at the rate cap with a bounded queue (tail-drop beyond 200ms of queueing, a bufferbloat guard), then propagation delay with uniform jitter applied per packet by a scheduler heap. Jittered packets can reorder, as with kernel netem. QUIC (quic-go) and WebRTC (Pion's ICE UDP mux) both accept a `net.PacketConn`, so the same emulator shapes both stacks.
+- The scenario's `delay_ms` is the link's **added round-trip time**, split across the two directions; jitter, loss, and the rate cap apply to the downlink (media) direction, like shaping an access link.
+- TCP (the HLS path) cannot be loss-impaired faithfully from userspace, since real loss acts below the congestion controller. The emulator applies a model instead: per-read serialization at the rate cap, propagation delay on direction changes, and loss expressed as retransmission-like pauses (2x RTT per lost MSS-equivalent). This is a documented approximation, not a simulation of TCP dynamics.
+- Every process exposes `/netem/apply`, `/netem/clear`, `/netem/state` on its admin port, plus `edgecast_netem_*` gauges so dashboards always show the conditions in force.
+
+`expctl` never touches Docker; it drives impairment and session lifecycle purely over HTTP on the compose network:
 
 ```mermaid
 sequenceDiagram
     participant E as expctl
-    participant N as netem agents (targets)
+    participant N as link emulators (targets)
     participant L as load generators
     participant P as Prometheus
 

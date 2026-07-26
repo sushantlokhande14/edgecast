@@ -1,0 +1,50 @@
+# Full matrix: 8 profiles x 3 protocols x 5 repetitions = 120 runs.
+# At 10s warmup + 60s measure each, budget ~2.5 hours.
+name: full
+warmup_seconds: 10
+measure_seconds: 60
+repetitions: 5
+
+protocols:
+  - name: moq
+    targets:
+      - moq-sub-us-west:8080
+      - moq-sub-us-east:8080
+      - moq-sub-eu-central:8080
+      - moq-sub-ap-south:8080
+      - moq-sub-ap-east:8080
+  - name: webrtc
+    targets:
+      - webrtc-sub-a:8080
+      - webrtc-sub-b:8080
+  - name: hls
+    targets:
+      - hls-client-a:8080
+      - hls-client-b:8080
+
+profiles:
+  - name: baseline
+    apply: { delay_ms: 5 }
+  - name: home-wifi
+    apply: { delay_ms: 20, jitter_ms: 5, loss_pct: 0.1, rate_kbit: 50000 }
+  - name: mobile-4g
+    apply: { delay_ms: 60, jitter_ms: 15, loss_pct: 0.5, rate_kbit: 12000 }
+  - name: mobile-3g
+    apply: { delay_ms: 150, jitter_ms: 40, loss_pct: 1.5, rate_kbit: 2000 }
+  - name: lossy
+    apply: { delay_ms: 40, jitter_ms: 10, loss_pct: 3, rate_kbit: 20000 }
+  - name: satellite
+    apply: { delay_ms: 300, jitter_ms: 20, loss_pct: 0.5, rate_kbit: 15000 }
+  - name: burst-loss
+    apply: { delay_ms: 30, jitter_ms: 5, rate_kbit: 20000 }
+    timeline:
+      - { at_seconds: 20, apply: { delay_ms: 30, jitter_ms: 5, loss_pct: 5, rate_kbit: 20000 } }
+      - { at_seconds: 32, apply: { delay_ms: 30, jitter_ms: 5, rate_kbit: 20000 } }
+      - { at_seconds: 50, apply: { delay_ms: 30, jitter_ms: 5, loss_pct: 5, rate_kbit: 20000 } }
+      - { at_seconds: 62, apply: { delay_ms: 30, jitter_ms: 5, rate_kbit: 20000 } }
+  - name: degrading
+    apply: { delay_ms: 20, rate_kbit: 20000 }
+    timeline:
+      - { at_seconds: 20, apply: { delay_ms: 60, jitter_ms: 10, loss_pct: 0.5, rate_kbit: 8000 } }
+      - { at_seconds: 35, apply: { delay_ms: 100, jitter_ms: 25, loss_pct: 1, rate_kbit: 3000 } }
+      - { at_seconds: 50, apply: { delay_ms: 150, jitter_ms: 40, loss_pct: 2, rate_kbit: 1500 } }

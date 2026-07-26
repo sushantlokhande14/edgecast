@@ -11,6 +11,7 @@ import (
 	"github.com/quic-go/quic-go"
 
 	"github.com/sushantlokhande14/edgecast/internal/media"
+	"github.com/sushantlokhande14/edgecast/internal/netem"
 	"github.com/sushantlokhande14/edgecast/internal/proto"
 	"github.com/sushantlokhande14/edgecast/internal/quicutil"
 )
@@ -46,8 +47,10 @@ type PubConfig struct {
 	Media       media.Config
 }
 
-// RunPublisher publishes the synthetic track forever, reconnecting on failure.
-func RunPublisher(ctx context.Context, cfg PubConfig) {
+// RunPublisher publishes the synthetic track forever, reconnecting on
+// failure. Its uplink runs through the emulated link (clean by default;
+// scenarios can impair the publisher too).
+func RunPublisher(ctx context.Context, link *netem.State, cfg PubConfig) {
 	tier := 0
 	for i, k := range Ladder {
 		if k == cfg.StartKbps {
@@ -57,7 +60,7 @@ func RunPublisher(ctx context.Context, cfg PubConfig) {
 	gen := media.NewGenerator(cfg.Media, Ladder[tier])
 	pubBitrate.Set(float64(Ladder[tier]))
 	for ctx.Err() == nil {
-		err := publishOnce(ctx, cfg, gen, &tier)
+		err := publishOnce(ctx, link, cfg, gen, &tier)
 		if ctx.Err() != nil {
 			return
 		}
@@ -66,11 +69,12 @@ func RunPublisher(ctx context.Context, cfg PubConfig) {
 	}
 }
 
-func publishOnce(ctx context.Context, cfg PubConfig, gen *media.Generator, tier *int) error {
-	conn, err := quicutil.Dial(ctx, cfg.RelayAddr, proto.ALPN)
+func publishOnce(ctx context.Context, link *netem.State, cfg PubConfig, gen *media.Generator, tier *int) error {
+	conn, pc, err := netem.DialQUIC(ctx, link, cfg.RelayAddr, quicutil.ClientTLS(proto.ALPN), quicutil.Config())
 	if err != nil {
 		return err
 	}
+	defer pc.Close()
 	defer conn.CloseWithError(0, "pub done")
 
 	ctrl, err := conn.OpenStreamSync(ctx)

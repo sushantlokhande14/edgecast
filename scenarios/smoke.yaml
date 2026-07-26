@@ -1,0 +1,38 @@
+# Smoke matrix: validates the whole pipeline and produces the committed
+# results. ~24 runs x ~55s plus orchestration = roughly 25 minutes.
+name: smoke
+warmup_seconds: 10
+measure_seconds: 45
+repetitions: 2
+
+protocols:
+  - name: moq
+    targets:
+      - moq-sub-us-west:8080
+      - moq-sub-us-east:8080
+      - moq-sub-eu-central:8080
+      - moq-sub-ap-south:8080
+      - moq-sub-ap-east:8080
+  - name: webrtc
+    targets:
+      - webrtc-sub-a:8080
+      - webrtc-sub-b:8080
+  - name: hls
+    targets:
+      - hls-client-a:8080
+      - hls-client-b:8080
+
+profiles:
+  - name: baseline
+    apply: { delay_ms: 5 }
+  - name: mobile-4g
+    apply: { delay_ms: 60, jitter_ms: 15, loss_pct: 0.5, rate_kbit: 12000 }
+  - name: mobile-3g
+    apply: { delay_ms: 150, jitter_ms: 40, loss_pct: 1.5, rate_kbit: 2000 }
+  - name: burst-loss
+    apply: { delay_ms: 30, jitter_ms: 5, rate_kbit: 20000 }
+    timeline:
+      - { at_seconds: 20, apply: { delay_ms: 30, jitter_ms: 5, loss_pct: 5, rate_kbit: 20000 } }
+      - { at_seconds: 30, apply: { delay_ms: 30, jitter_ms: 5, rate_kbit: 20000 } }
+      - { at_seconds: 40, apply: { delay_ms: 30, jitter_ms: 5, loss_pct: 5, rate_kbit: 20000 } }
+      - { at_seconds: 50, apply: { delay_ms: 30, jitter_ms: 5, rate_kbit: 20000 } }

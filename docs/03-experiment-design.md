@@ -13,9 +13,9 @@
 
 ## 3.2 Network profiles
 
-Applied with `tc netem` (delay/jitter/loss) plus `tbf` (rate). Access-side impairment targets subscriber containers; backbone impairment targets edge relays.
+Applied by the userspace link emulator (docs/02-architecture.md section 2.6). `delay` is the link's added round-trip time; jitter, loss, and rate caps shape the downlink. Access-side impairment targets subscriber containers; backbone impairment targets edge relays.
 
-| Profile | Delay | Jitter | Loss | Rate cap | Models |
+| Profile | Delay (RTT) | Jitter | Loss | Rate cap | Models |
 | --- | --- | --- | --- | --- | --- |
 | `baseline` | 5ms | 0 | 0% | none | Wired LAN |
 | `home-wifi` | 20ms | 5ms | 0.1% | 50 Mbit | Decent broadband |
@@ -26,7 +26,7 @@ Applied with `tc netem` (delay/jitter/loss) plus `tbf` (rate). Access-side impai
 | `degrading` | ramp 20ms to 150ms | ramp | ramp 0 to 2% | ramp 20 to 1.5 Mbit | Driving away from a cell tower (timeline scenario) |
 | `burst-loss` | 30ms | 5ms | 10s bursts of 5% | 20 Mbit | Transient interference; drives recovery-time measurement |
 
-Region base delays (always on, models geography): us-west 2ms, us-east 35ms, eu-central 70ms, ap-south 110ms, ap-east 90ms.
+Region base RTTs (always on, models geography): us-west 2ms, us-east 35ms, eu-central 70ms, ap-south 110ms, ap-east 90ms. Edge relays carry the same base RTT on their upstream dial to the origin, so the MoQ path pays the backbone hop plus the access hop.
 
 ## 3.3 Run protocol
 

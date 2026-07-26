@@ -24,6 +24,7 @@ import (
 	"github.com/prometheus/client_golang/prometheus/promauto"
 	"github.com/quic-go/quic-go"
 
+	"github.com/sushantlokhande14/edgecast/internal/netem"
 	"github.com/sushantlokhande14/edgecast/internal/proto"
 	"github.com/sushantlokhande14/edgecast/internal/quicutil"
 )
@@ -217,12 +218,16 @@ func (s *subscriber) writeGroup(ctx context.Context, g *groupBuffer) error {
 type Relay struct {
 	region   string
 	upstream string // parent relay address; empty for the origin
+	link     *netem.State
 	mu       sync.Mutex
 	tracks   map[string]*track
 }
 
-func New(region, upstream string) *Relay {
-	return &Relay{region: region, upstream: upstream, tracks: map[string]*track{}}
+// New creates a relay. link shapes the relay's dial to its upstream (the
+// backbone hop); the listen side is left clean so impairment is owned by
+// whichever side dials.
+func New(region, upstream string, link *netem.State) *Relay {
+	return &Relay{region: region, upstream: upstream, link: link, tracks: map[string]*track{}}
 }
 
 func (r *Relay) track(name string) *track {
@@ -388,10 +393,11 @@ func (r *Relay) upstreamLoop(ctx context.Context, t *track) {
 }
 
 func (r *Relay) pullUpstream(ctx context.Context, t *track) error {
-	conn, err := quicutil.Dial(ctx, r.upstream, proto.ALPN)
+	conn, pc, err := netem.DialQUIC(ctx, r.link, r.upstream, quicutil.ClientTLS(proto.ALPN), quicutil.Config())
 	if err != nil {
 		return err
 	}
+	defer pc.Close()
 	defer conn.CloseWithError(0, "upstream done")
 	upstreamSubs.Inc()
 	defer upstreamSubs.Dec()

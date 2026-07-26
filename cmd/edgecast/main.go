@@ -13,11 +13,17 @@ import (
 	"syscall"
 
 	"github.com/sushantlokhande14/edgecast/internal/admin"
+	"github.com/sushantlokhande14/edgecast/internal/expctl"
 	"github.com/sushantlokhande14/edgecast/internal/loadgen"
 	"github.com/sushantlokhande14/edgecast/internal/media"
 	"github.com/sushantlokhande14/edgecast/internal/moqclient"
+	"github.com/sushantlokhande14/edgecast/internal/netem"
 	"github.com/sushantlokhande14/edgecast/internal/relay"
 )
+
+// link is the process-wide emulated access/backbone link. Every role gets
+// one: base RTT from REGION_RTT_MS plus whatever scenario expctl applies.
+var link *netem.State
 
 func main() {
 	log.SetFlags(log.LstdFlags | log.Lmicroseconds)
@@ -38,11 +44,17 @@ func main() {
 		run = runMoqPub
 	case "moq-sub":
 		run = runMoqSub
+	case "expctl":
+		run = func(ctx context.Context, _ *admin.Server) error {
+			return expctl.Run(ctx, env("MATRIX", "/app/scenarios/smoke.yaml"), env("OUT", "/results"))
+		}
 	default:
 		fmt.Fprintf(os.Stderr, "unknown role %q\n", role)
 		usage()
 		os.Exit(2)
 	}
+	link = netem.NewState(envFloat("REGION_RTT_MS", 0))
+	link.RegisterHandlers(adm)
 	adm.Start(env("ADMIN_ADDR", ":8080"))
 	if err := run(ctx, adm); err != nil && ctx.Err() == nil {
 		log.Fatalf("%s: %v", role, err)
@@ -51,12 +63,12 @@ func main() {
 
 func usage() {
 	fmt.Fprintln(os.Stderr, `usage: edgecast <role>
-roles: relay | moq-pub | moq-sub
+roles: relay | moq-pub | moq-sub | expctl
 configuration is env-var driven; see docs/04-setup.md`)
 }
 
 func runRelay(ctx context.Context, adm *admin.Server) error {
-	r := relay.New(env("REGION", "local"), env("UPSTREAM", ""))
+	r := relay.New(env("REGION", "local"), env("UPSTREAM", ""), link)
 	return r.ListenAndServe(ctx, env("LISTEN", ":4443"))
 }
 
@@ -72,7 +84,7 @@ func runMoqPub(ctx context.Context, adm *admin.Server) error {
 			KeyframeMul: 4.0,
 		},
 	}
-	moqclient.RunPublisher(ctx, cfg)
+	moqclient.RunPublisher(ctx, link, cfg)
 	return nil
 }
 
@@ -81,7 +93,7 @@ func runMoqSub(ctx context.Context, adm *admin.Server) error {
 	trackName := env("TRACK", "cam0")
 	mgr := loadgen.NewManager("moq", env("REGION", "local"), envInt("SESSIONS", 10),
 		func(ctx context.Context, rec *loadgen.Recorder) error {
-			return moqclient.Subscribe(ctx, relayAddr, trackName, rec)
+			return moqclient.Subscribe(ctx, link, relayAddr, trackName, rec)
 		})
 	mgr.RegisterHandlers(adm)
 	mgr.Start(ctx)
@@ -103,6 +115,17 @@ func envInt(key string, def int) int {
 			log.Fatalf("env %s=%q: not an integer", key, v)
 		}
 		return n
+	}
+	return def
+}
+
+func envFloat(key string, def float64) float64 {
+	if v := os.Getenv(key); v != "" {
+		f, err := strconv.ParseFloat(v, 64)
+		if err != nil {
+			log.Fatalf("env %s=%q: not a number", key, v)
+		}
+		return f
 	}
 	return def
 }

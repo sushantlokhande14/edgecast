@@ -4,7 +4,6 @@
 package quicutil
 
 import (
-	"context"
 	"crypto/ecdsa"
 	"crypto/elliptic"
 	"crypto/rand"
@@ -54,10 +53,4 @@ func Config() *quic.Config {
 		InitialConnectionReceiveWindow: 1024 * 1024,
 		MaxConnectionReceiveWindow:     16 * 1024 * 1024,
 	}
-}
-
-func Dial(ctx context.Context, addr, alpn string) (quic.Connection, error) {
-	dctx, cancel := context.WithTimeout(ctx, 10*time.Second)
-	defer cancel()
-	return quic.DialAddr(dctx, addr, ClientTLS(alpn), Config())
 }
