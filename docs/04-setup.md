@@ -54,7 +54,34 @@ docker exec edgecast-moq-sub-eu-central-1 curl -s -X POST http://localhost:8080/
 
 `POST /sessions/restart` with `{"run_id":"manual-1"}` restarts a load generator's sessions; `GET /sessions/results?run_id=manual-1` returns their JSON.
 
-## 4.5 Knobs
+## 4.5 Producing figures and dashboard snapshots
+
+Charts are built from committed experiment output, so any figure can be regenerated from a fresh clone without rerunning experiments:
+
+```bash
+docker build -t edgecast-figures:local tools/figures
+docker run --rm -v "$PWD/results:/results:ro" -v "$PWD/docs/images:/out" -e RESULTS_DIR=/results/paper edgecast-figures:local
+```
+
+Dashboards are snapshotted server-side by the `renderer` service (Grafana's own image renderer), which is more reliable than driving a generic headless browser:
+
+```bash
+curl -o docs/images/dashboard-protocol-comparison.png "http://localhost:3000/render/d/edgecast-compare/x?orgId=1&from=now-40m&to=now&kiosk&width=1500&height=1500&scale=2"
+```
+
+Architecture diagrams live as Mermaid sources in `tools/diagrams` and render to PNG with `tools/diagrams/render.sh` (see the header comment for the exact container invocation).
+
+## 4.6 Fault injection
+
+Beyond the impairment profiles, `tools/faultinj/relay-failure.sh` kills an edge relay with SIGKILL mid-session and restarts it, holding an unaffected region as a control, then writes both regions' per-session timelines for offline analysis:
+
+```bash
+bash tools/faultinj/relay-failure.sh
+```
+
+This exercises the reconnect paths that let the topology converge from any state, and produces a measured recovery time rather than an assertion that reconnect works.
+
+## 4.7 Knobs
 
 | Env var | Where | Meaning |
 | --- | --- | --- |
@@ -64,6 +91,8 @@ docker exec edgecast-moq-sub-eu-central-1 curl -s -X POST http://localhost:8080/
 | `REGION_RTT_MS` | any | static base RTT of the container's emulated link |
 | `FPS`, `GROUP_FRAMES` | publishers | media cadence and group (GOP) size |
 | `MATRIX`, `OUT` | expctl | scenario file and output directory |
+
+Available matrices in `scenarios/`: `smoke.yaml` (4 profiles, 2 reps, ~25 min), `paper.yaml` (8 profiles, 3 reps, ~80 min), `full.yaml` (8 profiles, 5 reps, ~2.5 h), and `abr-ab.yaml` (the adaptation diagnosis check, MoQ only).
 
 Scaling up is mostly `SESSIONS`; 100 MoQ + 20 WebRTC + 20 HLS sessions is comfortable on a laptop, and the compose file is the place to add regions.
 
