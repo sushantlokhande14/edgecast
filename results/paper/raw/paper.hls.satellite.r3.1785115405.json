@@ -1,0 +1,4621 @@
+{
+ "matrix": "paper",
+ "run_id": "paper.hls.satellite.r3.1785115405",
+ "protocol": "hls",
+ "profile": "satellite",
+ "profile_def": {
+  "name": "satellite",
+  "apply": {
+   "delay_ms": 300,
+   "jitter_ms": 20,
+   "loss_pct": 0.5,
+   "rate_kbit": 15000
+  }
+ },
+ "repetition": 3,
+ "started_unix_ms": 1785115405696,
+ "warmup_s": 10,
+ "measure_s": 50,
+ "sessions": [
+  {
+   "id": "hls-us-east-r27-s0",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785115405697,
+   "startup_ms": 7718.746,
+   "stall_count": 41,
+   "stalled_ms": 28021,
+   "jitter_ms": 479.6540380503602,
+   "e2e_p50_ms": 15631.177,
+   "e2e_p95_ms": 18190.716,
+   "bytes": 1800000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115410,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115413,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115416,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115419,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 209
+    },
+    {
+     "t": 1785115424,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1271
+    },
+    {
+     "t": 1785115427,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1271
+    },
+    {
+     "t": 1785115430,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 938
+    },
+    {
+     "t": 1785115433,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 603
+    },
+    {
+     "t": 1785115436,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 600
+    },
+    {
+     "t": 1785115438,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 601
+    },
+    {
+     "t": 1785115442,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1940
+    },
+    {
+     "t": 1785115445,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 600
+    },
+    {
+     "t": 1785115447,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 248
+    },
+    {
+     "t": 1785115448,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115449,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1275
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 638
+    },
+    {
+     "t": 1785115455,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 638
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115469,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r27-s1",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785115405697,
+   "startup_ms": 7639.139,
+   "stall_count": 39,
+   "stalled_ms": 28078,
+   "jitter_ms": 614.2629791871099,
+   "e2e_p50_ms": 14878.876,
+   "e2e_p95_ms": 19445.275,
+   "bytes": 1800000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115410,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115413,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115416,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115420,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 878
+    },
+    {
+     "t": 1785115424,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 600
+    },
+    {
+     "t": 1785115427,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 602
+    },
+    {
+     "t": 1785115430,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 936
+    },
+    {
+     "t": 1785115433,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1271
+    },
+    {
+     "t": 1785115436,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1270
+    },
+    {
+     "t": 1785115439,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1270
+    },
+    {
+     "t": 1785115443,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1271
+    },
+    {
+     "t": 1785115446,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1268
+    },
+    {
+     "t": 1785115448,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 246
+    },
+    {
+     "t": 1785115449,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1275
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 638
+    },
+    {
+     "t": 1785115455,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 638
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1275
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115469,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r27-s2",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785115405697,
+   "startup_ms": 7606.7,
+   "stall_count": 60,
+   "stalled_ms": 39994,
+   "jitter_ms": 522.5074214811325,
+   "e2e_p50_ms": 10252.744,
+   "e2e_p95_ms": 15924.506,
+   "bytes": 900000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115410,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115413,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115416,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115419,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 211
+    },
+    {
+     "t": 1785115423,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 602
+    },
+    {
+     "t": 1785115429,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 3283
+    },
+    {
+     "t": 1785115431,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 247
+    },
+    {
+     "t": 1785115432,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115433,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115434,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115435,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115436,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115437,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115438,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 638
+    },
+    {
+     "t": 1785115439,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115440,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115441,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115442,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115443,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115444,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1275
+    },
+    {
+     "t": 1785115445,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115446,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115447,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115448,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115449,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115454,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r27-s3",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785115405697,
+   "startup_ms": 7633.999,
+   "stall_count": 39,
+   "stalled_ms": 28038,
+   "jitter_ms": 555.4640724811923,
+   "e2e_p50_ms": 15544.646,
+   "e2e_p95_ms": 18779.392,
+   "bytes": 1800000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115410,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115413,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115416,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115418,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115423,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 809
+    },
+    {
+     "t": 1785115427,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1271
+    },
+    {
+     "t": 1785115430,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1607
+    },
+    {
+     "t": 1785115433,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 602
+    },
+    {
+     "t": 1785115436,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115439,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1271
+    },
+    {
+     "t": 1785115443,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115445,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 601
+    },
+    {
+     "t": 1785115448,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 882
+    },
+    {
+     "t": 1785115449,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115455,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1271
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1271
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 638
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 635
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r27-s4",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785115405697,
+   "startup_ms": 7598.562,
+   "stall_count": 40,
+   "stalled_ms": 28041,
+   "jitter_ms": 558.9360031794639,
+   "e2e_p50_ms": 15511.426,
+   "e2e_p95_ms": 18744.298,
+   "bytes": 1800000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115410,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115413,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115416,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115419,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 210
+    },
+    {
+     "t": 1785115423,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 602
+    },
+    {
+     "t": 1785115427,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115430,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1605
+    },
+    {
+     "t": 1785115433,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 601
+    },
+    {
+     "t": 1785115436,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1271
+    },
+    {
+     "t": 1785115439,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 602
+    },
+    {
+     "t": 1785115442,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1271
+    },
+    {
+     "t": 1785115445,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115448,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 882
+    },
+    {
+     "t": 1785115449,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115454,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1271
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r27-s5",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785115405697,
+   "startup_ms": 7565.305,
+   "stall_count": 39,
+   "stalled_ms": 28074,
+   "jitter_ms": 562.8016519737668,
+   "e2e_p50_ms": 15475.29,
+   "e2e_p95_ms": 18707.029,
+   "bytes": 1800000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115409,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115413,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115416,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115420,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 879
+    },
+    {
+     "t": 1785115425,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1271
+    },
+    {
+     "t": 1785115427,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 599
+    },
+    {
+     "t": 1785115430,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 937
+    },
+    {
+     "t": 1785115434,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115437,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1275
+    },
+    {
+     "t": 1785115439,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 599
+    },
+    {
+     "t": 1785115443,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1269
+    },
+    {
+     "t": 1785115445,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 600
+    },
+    {
+     "t": 1785115448,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 882
+    },
+    {
+     "t": 1785115449,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115454,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1943
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 635
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r27-s6",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785115405697,
+   "startup_ms": 6914.147,
+   "stall_count": 44,
+   "stalled_ms": 32666,
+   "jitter_ms": 696.7672386675101,
+   "e2e_p50_ms": 14895.872,
+   "e2e_p95_ms": 20652.131,
+   "bytes": 1500000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115410,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115412,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115416,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115418,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 211
+    },
+    {
+     "t": 1785115421,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 599
+    },
+    {
+     "t": 1785115428,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 2948
+    },
+    {
+     "t": 1785115432,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1940
+    },
+    {
+     "t": 1785115434,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 602
+    },
+    {
+     "t": 1785115437,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115441,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1940
+    },
+    {
+     "t": 1785115444,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 884
+    },
+    {
+     "t": 1785115445,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115446,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115447,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115448,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115449,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115454,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r27-s7",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785115405697,
+   "startup_ms": 7277.847,
+   "stall_count": 51,
+   "stalled_ms": 32392,
+   "jitter_ms": 415.1950827672379,
+   "e2e_p50_ms": 12577.068,
+   "e2e_p95_ms": 15650.75,
+   "bytes": 1500000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115410,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115412,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115415,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115418,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115421,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 139
+    },
+    {
+     "t": 1785115425,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 936
+    },
+    {
+     "t": 1785115429,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1270
+    },
+    {
+     "t": 1785115431,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 601
+    },
+    {
+     "t": 1785115434,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 601
+    },
+    {
+     "t": 1785115436,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 600
+    },
+    {
+     "t": 1785115439,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 882
+    },
+    {
+     "t": 1785115440,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115441,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115442,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115443,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115444,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115445,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115446,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115447,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115448,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115449,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115455,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1275
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1271
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1271
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r27-s8",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785115405697,
+   "startup_ms": 7202.114,
+   "stall_count": 49,
+   "stalled_ms": 32464,
+   "jitter_ms": 485.6513957244959,
+   "e2e_p50_ms": 13847.94,
+   "e2e_p95_ms": 16922.456,
+   "bytes": 1500000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115410,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115412,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115415,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115418,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115421,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 815
+    },
+    {
+     "t": 1785115427,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1608
+    },
+    {
+     "t": 1785115429,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 601
+    },
+    {
+     "t": 1785115432,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 598
+    },
+    {
+     "t": 1785115434,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 602
+    },
+    {
+     "t": 1785115438,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115440,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 245
+    },
+    {
+     "t": 1785115441,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115442,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115443,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115444,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115445,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115446,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115447,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115448,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115449,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 635
+    },
+    {
+     "t": 1785115455,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1271
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1271
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 638
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 635
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r27-s9",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785115405697,
+   "startup_ms": 7788.488,
+   "stall_count": 43,
+   "stalled_ms": 29963,
+   "jitter_ms": 531.0116396247905,
+   "e2e_p50_ms": 12755.175,
+   "e2e_p95_ms": 18177.917,
+   "bytes": 1650000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115410,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115413,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115416,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115419,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115421,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 142
+    },
+    {
+     "t": 1785115426,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 601
+    },
+    {
+     "t": 1785115429,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1607
+    },
+    {
+     "t": 1785115433,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1940
+    },
+    {
+     "t": 1785115436,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 602
+    },
+    {
+     "t": 1785115439,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115442,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115444,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 246
+    },
+    {
+     "t": 1785115445,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115446,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115447,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115448,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115449,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1272
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 638
+    },
+    {
+     "t": 1785115455,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 638
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1274
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 637
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1273
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785115469,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 636
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r27-s0",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785115405698,
+   "startup_ms": 8438.983,
+   "stall_count": 55,
+   "stalled_ms": 39422,
+   "jitter_ms": 604.5727803249359,
+   "e2e_p50_ms": 12451.785,
+   "e2e_p95_ms": 17448.972,
+   "bytes": 900000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115409,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115414,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115417,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115421,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1576
+    },
+    {
+     "t": 1785115427,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1605
+    },
+    {
+     "t": 1785115430,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1604
+    },
+    {
+     "t": 1785115433,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1060
+    },
+    {
+     "t": 1785115434,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115435,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115436,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115437,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115438,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115439,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1345
+    },
+    {
+     "t": 1785115440,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115441,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115442,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115443,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115444,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115445,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115446,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115447,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115448,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115449,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115455,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 673
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115469,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r27-s1",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785115405698,
+   "startup_ms": 7187.235,
+   "stall_count": 37,
+   "stalled_ms": 30147,
+   "jitter_ms": 628.8380938459053,
+   "e2e_p50_ms": 15091.959,
+   "e2e_p95_ms": 20587.5,
+   "bytes": 1650000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115410,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115412,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115416,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115420,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1580
+    },
+    {
+     "t": 1785115425,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 864
+    },
+    {
+     "t": 1785115428,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1237
+    },
+    {
+     "t": 1785115432,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 2345
+    },
+    {
+     "t": 1785115435,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 864
+    },
+    {
+     "t": 1785115438,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 864
+    },
+    {
+     "t": 1785115441,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 864
+    },
+    {
+     "t": 1785115445,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 2343
+    },
+    {
+     "t": 1785115448,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1057
+    },
+    {
+     "t": 1785115449,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115455,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 673
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r27-s2",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785115405698,
+   "startup_ms": 8591.419,
+   "stall_count": 57,
+   "stalled_ms": 39351,
+   "jitter_ms": 479.30184223365785,
+   "e2e_p50_ms": 13385.367,
+   "e2e_p95_ms": 16867.382,
+   "bytes": 900000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115411,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115414,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115419,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 715
+    },
+    {
+     "t": 1785115422,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 864
+    },
+    {
+     "t": 1785115427,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1606
+    },
+    {
+     "t": 1785115430,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 867
+    },
+    {
+     "t": 1785115432,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 384
+    },
+    {
+     "t": 1785115433,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115434,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115435,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115436,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115437,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115438,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115439,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115440,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115441,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115442,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115443,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115444,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115445,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115446,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115447,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115448,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115449,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115455,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115469,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r27-s3",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785115405698,
+   "startup_ms": 7868.443,
+   "stall_count": 35,
+   "stalled_ms": 27534,
+   "jitter_ms": 622.3793083515636,
+   "e2e_p50_ms": 15899.945,
+   "e2e_p95_ms": 20653.272,
+   "bytes": 1800000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115409,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115413,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115416,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115419,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 102
+    },
+    {
+     "t": 1785115425,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1605
+    },
+    {
+     "t": 1785115427,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 862
+    },
+    {
+     "t": 1785115431,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1238
+    },
+    {
+     "t": 1785115434,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 863
+    },
+    {
+     "t": 1785115436,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 863
+    },
+    {
+     "t": 1785115439,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 865
+    },
+    {
+     "t": 1785115444,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 2343
+    },
+    {
+     "t": 1785115447,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1604
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1059
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1345
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115455,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1345
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 673
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r27-s4",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785115405698,
+   "startup_ms": 7964.222,
+   "stall_count": 34,
+   "stalled_ms": 27584,
+   "jitter_ms": 664.674919650971,
+   "e2e_p50_ms": 15992.596,
+   "e2e_p95_ms": 21486.916,
+   "bytes": 1800000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115410,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115413,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115416,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115419,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 100
+    },
+    {
+     "t": 1785115424,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 863
+    },
+    {
+     "t": 1785115428,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1604
+    },
+    {
+     "t": 1785115431,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1237
+    },
+    {
+     "t": 1785115434,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 864
+    },
+    {
+     "t": 1785115436,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 863
+    },
+    {
+     "t": 1785115440,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1604
+    },
+    {
+     "t": 1785115444,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1604
+    },
+    {
+     "t": 1785115448,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 2343
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 386
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r27-s5",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785115405698,
+   "startup_ms": 7213.375,
+   "stall_count": 40,
+   "stalled_ms": 30683,
+   "jitter_ms": 653.8781689768527,
+   "e2e_p50_ms": 15858.924,
+   "e2e_p95_ms": 20058.739,
+   "bytes": 1650000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115410,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115412,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115416,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115419,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 840
+    },
+    {
+     "t": 1785115425,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1605
+    },
+    {
+     "t": 1785115429,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1977
+    },
+    {
+     "t": 1785115431,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 865
+    },
+    {
+     "t": 1785115435,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1604
+    },
+    {
+     "t": 1785115438,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 865
+    },
+    {
+     "t": 1785115441,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 864
+    },
+    {
+     "t": 1785115444,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 863
+    },
+    {
+     "t": 1785115446,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 387
+    },
+    {
+     "t": 1785115447,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115448,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115449,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115455,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115469,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r27-s6",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785115405698,
+   "startup_ms": 7746.275,
+   "stall_count": 37,
+   "stalled_ms": 28125,
+   "jitter_ms": 656.7820916160708,
+   "e2e_p50_ms": 17256.961,
+   "e2e_p95_ms": 19849.84,
+   "bytes": 1800000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115409,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115413,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115417,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115420,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 840
+    },
+    {
+     "t": 1785115425,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1605
+    },
+    {
+     "t": 1785115428,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 864
+    },
+    {
+     "t": 1785115432,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1977
+    },
+    {
+     "t": 1785115435,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 864
+    },
+    {
+     "t": 1785115438,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 863
+    },
+    {
+     "t": 1785115441,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 864
+    },
+    {
+     "t": 1785115443,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 864
+    },
+    {
+     "t": 1785115446,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 864
+    },
+    {
+     "t": 1785115449,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1057
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115455,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 673
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115469,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r27-s7",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785115405698,
+   "startup_ms": 8577.29,
+   "stall_count": 54,
+   "stalled_ms": 38770,
+   "jitter_ms": 530.9380351390838,
+   "e2e_p50_ms": 13375.268,
+   "e2e_p95_ms": 17594.625,
+   "bytes": 900000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115411,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115414,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115418,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115422,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1583
+    },
+    {
+     "t": 1785115426,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 865
+    },
+    {
+     "t": 1785115430,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 2345
+    },
+    {
+     "t": 1785115433,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1060
+    },
+    {
+     "t": 1785115434,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115435,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115436,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115437,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115438,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115439,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115440,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115441,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115442,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115443,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115444,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1345
+    },
+    {
+     "t": 1785115445,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 673
+    },
+    {
+     "t": 1785115446,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115447,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115448,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115449,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1345
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115455,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 673
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r27-s8",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785115405698,
+   "startup_ms": 7040.56,
+   "stall_count": 40,
+   "stalled_ms": 30687,
+   "jitter_ms": 647.643050441737,
+   "e2e_p50_ms": 15687.693,
+   "e2e_p95_ms": 19886.886,
+   "bytes": 1650000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115409,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115412,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115416,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115420,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1580
+    },
+    {
+     "t": 1785115424,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 866
+    },
+    {
+     "t": 1785115428,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1977
+    },
+    {
+     "t": 1785115432,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1605
+    },
+    {
+     "t": 1785115435,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 862
+    },
+    {
+     "t": 1785115438,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 865
+    },
+    {
+     "t": 1785115441,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 865
+    },
+    {
+     "t": 1785115444,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 865
+    },
+    {
+     "t": 1785115446,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 385
+    },
+    {
+     "t": 1785115447,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115448,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115449,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115455,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115469,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r27-s9",
+   "run_id": "paper.hls.satellite.r3.1785115405",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785115405698,
+   "startup_ms": 7900.524,
+   "stall_count": 55,
+   "stalled_ms": 39424,
+   "jitter_ms": 566.4354633731842,
+   "e2e_p50_ms": 11916.548,
+   "e2e_p95_ms": 16913.487,
+   "bytes": 900000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785115409,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115413,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115417,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785115421,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1580
+    },
+    {
+     "t": 1785115426,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1605
+    },
+    {
+     "t": 1785115430,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1605
+    },
+    {
+     "t": 1785115432,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 384
+    },
+    {
+     "t": 1785115433,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115434,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115435,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115436,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115437,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115438,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 673
+    },
+    {
+     "t": 1785115439,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115440,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115441,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115442,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115443,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115444,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115445,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115446,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1344
+    },
+    {
+     "t": 1785115447,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115448,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115449,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115450,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1345
+    },
+    {
+     "t": 1785115451,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115452,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115453,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115455,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 673
+    },
+    {
+     "t": 1785115456,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115457,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115458,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115459,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115460,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 672
+    },
+    {
+     "t": 1785115461,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1342
+    },
+    {
+     "t": 1785115462,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115463,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115464,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115465,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115466,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    },
+    {
+     "t": 1785115467,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 1343
+    },
+    {
+     "t": 1785115468,
+     "bytes": 0,
+     "frames": 0,
+     "stall_ms": 671
+    }
+   ]
+  }
+ ]
+}

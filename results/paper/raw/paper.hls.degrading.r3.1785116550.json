@@ -1,0 +1,3564 @@
+{
+ "matrix": "paper",
+ "run_id": "paper.hls.degrading.r3.1785116550",
+ "protocol": "hls",
+ "profile": "degrading",
+ "profile_def": {
+  "name": "degrading",
+  "apply": {
+   "delay_ms": 20,
+   "jitter_ms": 0,
+   "loss_pct": 0,
+   "rate_kbit": 20000
+  },
+  "timeline": [
+   {
+    "at_seconds": 15,
+    "apply": {
+     "delay_ms": 60,
+     "jitter_ms": 10,
+     "loss_pct": 0.5,
+     "rate_kbit": 8000
+    }
+   },
+   {
+    "at_seconds": 30,
+    "apply": {
+     "delay_ms": 100,
+     "jitter_ms": 25,
+     "loss_pct": 1,
+     "rate_kbit": 3000
+    }
+   },
+   {
+    "at_seconds": 45,
+    "apply": {
+     "delay_ms": 150,
+     "jitter_ms": 40,
+     "loss_pct": 2,
+     "rate_kbit": 1500
+    }
+   }
+  ]
+ },
+ "repetition": 3,
+ "started_unix_ms": 1785116550892,
+ "warmup_s": 10,
+ "measure_s": 50,
+ "sessions": [
+  {
+   "id": "hls-us-east-r33-s0",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785116550893,
+   "startup_ms": 1519.528,
+   "stall_count": 6,
+   "stalled_ms": 5384,
+   "jitter_ms": 700.7360523598018,
+   "e2e_p50_ms": 4107.827,
+   "e2e_p95_ms": 9510.132,
+   "bytes": 10500000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116551,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116552,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116554,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116556,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116559,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116561,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116563,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116564,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116570,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116573,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116576,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116578,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 145
+    },
+    {
+     "t": 1785116579,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116581,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116583,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116585,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116589,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 1329
+    },
+    {
+     "t": 1785116591,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116593,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116594,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116596,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116600,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116604,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 909
+    },
+    {
+     "t": 1785116607,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 936
+    },
+    {
+     "t": 1785116610,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1128
+    },
+    {
+     "t": 1785116613,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 937
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r33-s1",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785116550893,
+   "startup_ms": 1650.715,
+   "stall_count": 5,
+   "stalled_ms": 5264,
+   "jitter_ms": 806.1697061735205,
+   "e2e_p50_ms": 3023.972,
+   "e2e_p95_ms": 8044.147,
+   "bytes": 10875000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116551,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116552,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116554,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116556,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116559,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116560,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116563,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116565,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116569,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116572,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116574,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116576,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116578,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116579,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116582,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116585,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116588,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 12
+    },
+    {
+     "t": 1785116589,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116591,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116593,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116595,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116596,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116602,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 586
+    },
+    {
+     "t": 1785116605,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1125
+    },
+    {
+     "t": 1785116608,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 937
+    },
+    {
+     "t": 1785116613,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 2604
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r33-s2",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785116550893,
+   "startup_ms": 1511.411,
+   "stall_count": 6,
+   "stalled_ms": 5137,
+   "jitter_ms": 623.510603846917,
+   "e2e_p50_ms": 3407.223,
+   "e2e_p95_ms": 9352.072,
+   "bytes": 10275000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116551,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116552,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116554,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116556,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116559,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116561,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116563,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116564,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116570,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116572,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116575,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116577,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116579,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116580,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116583,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116586,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 188
+    },
+    {
+     "t": 1785116588,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116589,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116591,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116594,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116596,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116599,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 80
+    },
+    {
+     "t": 1785116603,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1127
+    },
+    {
+     "t": 1785116606,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1308
+    },
+    {
+     "t": 1785116610,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 2236
+    },
+    {
+     "t": 1785116613,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 198
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r33-s3",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785116550893,
+   "startup_ms": 1576.644,
+   "stall_count": 3,
+   "stalled_ms": 4041,
+   "jitter_ms": 599.1627668658776,
+   "e2e_p50_ms": 2996.471,
+   "e2e_p95_ms": 7026.938,
+   "bytes": 11025000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116551,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116552,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116555,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116556,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116559,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116561,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116562,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116565,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116570,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116572,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116574,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116577,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116578,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116580,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116582,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116584,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116587,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116589,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116591,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116592,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116594,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116596,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116601,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116603,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116607,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1608
+    },
+    {
+     "t": 1785116610,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 937
+    },
+    {
+     "t": 1785116614,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1496
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r33-s4",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785116550893,
+   "startup_ms": 1447.133,
+   "stall_count": 5,
+   "stalled_ms": 3923,
+   "jitter_ms": 638.8039463277921,
+   "e2e_p50_ms": 3536.346,
+   "e2e_p95_ms": 7701.868,
+   "bytes": 11025000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116551,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116552,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116554,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116557,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116559,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116561,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116563,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116565,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116570,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116572,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116574,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116577,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116579,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116580,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116582,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116584,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116588,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 53
+    },
+    {
+     "t": 1785116590,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116591,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116594,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116595,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116597,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116601,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116604,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 870
+    },
+    {
+     "t": 1785116607,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 938
+    },
+    {
+     "t": 1785116611,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1493
+    },
+    {
+     "t": 1785116613,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 569
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r33-s5",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785116550893,
+   "startup_ms": 1700.727,
+   "stall_count": 3,
+   "stalled_ms": 3909,
+   "jitter_ms": 581.0249001700638,
+   "e2e_p50_ms": 3535.849,
+   "e2e_p95_ms": 7943.277,
+   "bytes": 10875000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116551,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116552,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116554,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116556,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116559,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116561,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116563,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116565,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116569,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116572,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116574,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116577,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116579,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116581,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116582,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116586,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116589,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 1498
+    },
+    {
+     "t": 1785116591,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116593,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116594,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116596,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116599,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116603,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116605,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116609,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1843
+    },
+    {
+     "t": 1785116612,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 568
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r33-s6",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785116550893,
+   "startup_ms": 1424.137,
+   "stall_count": 3,
+   "stalled_ms": 4673,
+   "jitter_ms": 669.1274512133257,
+   "e2e_p50_ms": 3094.642,
+   "e2e_p95_ms": 7599.19,
+   "bytes": 10500000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116551,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116552,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116554,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116557,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116559,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116561,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116563,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116565,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116570,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116572,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116575,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116577,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116578,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116580,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116582,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116584,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116587,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116589,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116590,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116593,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116595,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116597,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116601,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116605,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1501
+    },
+    {
+     "t": 1785116608,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1306
+    },
+    {
+     "t": 1785116612,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1866
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r33-s7",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785116550893,
+   "startup_ms": 1718.447,
+   "stall_count": 2,
+   "stalled_ms": 1238,
+   "jitter_ms": 614.0070664335395,
+   "e2e_p50_ms": 2596.345,
+   "e2e_p95_ms": 5545.041,
+   "bytes": 11400000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116551,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116552,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116554,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116556,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116559,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116561,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116563,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116565,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116570,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116572,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116574,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116577,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116578,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116580,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116581,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116584,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116586,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116589,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116591,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116592,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116594,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116595,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116597,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116603,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116605,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116608,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116610,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 483
+    },
+    {
+     "t": 1785116613,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 755
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r33-s8",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785116550893,
+   "startup_ms": 1352.393,
+   "stall_count": 4,
+   "stalled_ms": 4572,
+   "jitter_ms": 840.2975811168727,
+   "e2e_p50_ms": 2910.221,
+   "e2e_p95_ms": 8534.87,
+   "bytes": 10500000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116551,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116552,
+     "bytes": 750000,
+     "frames": 2,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116554,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116556,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116559,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116561,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116563,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116565,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116570,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116572,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116575,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116576,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116578,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116579,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116581,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116585,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116588,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 292
+    },
+    {
+     "t": 1785116589,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116591,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116592,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116594,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116597,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116601,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116606,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 2218
+    },
+    {
+     "t": 1785116608,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 566
+    },
+    {
+     "t": 1785116612,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1496
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r33-s9",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785116550893,
+   "startup_ms": 1386.483,
+   "stall_count": 5,
+   "stalled_ms": 2899,
+   "jitter_ms": 620.9914893790964,
+   "e2e_p50_ms": 3303.588,
+   "e2e_p95_ms": 7072.577,
+   "bytes": 10650000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116551,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116552,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116554,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116557,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116559,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116561,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116563,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116565,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116570,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116572,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116575,
+     "bytes": 750000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116577,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116578,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116580,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116582,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116585,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116587,
+     "bytes": 375000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116589,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116591,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116592,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116595,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116597,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116602,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 255
+    },
+    {
+     "t": 1785116604,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 755
+    },
+    {
+     "t": 1785116607,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 936
+    },
+    {
+     "t": 1785116610,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 756
+    },
+    {
+     "t": 1785116612,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 197
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r33-s0",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785116550894,
+   "startup_ms": 1893.899,
+   "stall_count": 4,
+   "stalled_ms": 5104,
+   "jitter_ms": 620.8940362498219,
+   "e2e_p50_ms": 1688.734,
+   "e2e_p95_ms": 9909.548,
+   "bytes": 3900000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116552,
+     "bytes": 300000,
+     "frames": 2,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116554,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116556,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116558,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116560,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116562,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116564,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116569,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116571,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116573,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116575,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116577,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116579,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116581,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116583,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116586,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116588,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116591,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116593,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116596,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116601,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 636
+    },
+    {
+     "t": 1785116605,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 2443
+    },
+    {
+     "t": 1785116607,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 461
+    },
+    {
+     "t": 1785116611,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1564
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r33-s1",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785116550894,
+   "startup_ms": 2098.047,
+   "stall_count": 3,
+   "stalled_ms": 2911,
+   "jitter_ms": 560.164281169096,
+   "e2e_p50_ms": 1810.596,
+   "e2e_p95_ms": 7227.508,
+   "bytes": 4050000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116552,
+     "bytes": 300000,
+     "frames": 2,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116555,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116557,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116559,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116561,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116563,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116565,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116569,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116571,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116573,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116575,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116577,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116579,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116581,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116583,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116585,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116588,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116590,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116592,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116594,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116596,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116601,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116605,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 449
+    },
+    {
+     "t": 1785116608,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1339
+    },
+    {
+     "t": 1785116611,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1123
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r33-s2",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785116550894,
+   "startup_ms": 2004.527,
+   "stall_count": 4,
+   "stalled_ms": 5280,
+   "jitter_ms": 639.311604927331,
+   "e2e_p50_ms": 2001.019,
+   "e2e_p95_ms": 9740.328,
+   "bytes": 3900000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116552,
+     "bytes": 300000,
+     "frames": 2,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116554,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116556,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116558,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116560,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116562,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116565,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116569,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116571,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116573,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116575,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116577,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116579,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116581,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116583,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116586,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116589,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116591,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116594,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116596,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116600,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 155
+    },
+    {
+     "t": 1785116604,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1340
+    },
+    {
+     "t": 1785116607,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1563
+    },
+    {
+     "t": 1785116611,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 2222
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r33-s3",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785116550894,
+   "startup_ms": 2068.143,
+   "stall_count": 4,
+   "stalled_ms": 5722,
+   "jitter_ms": 644.9840801984869,
+   "e2e_p50_ms": 1780.803,
+   "e2e_p95_ms": 9137.711,
+   "bytes": 4050000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116552,
+     "bytes": 300000,
+     "frames": 2,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116555,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116557,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116559,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116561,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116563,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116565,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116569,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116571,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116573,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116575,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116577,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116579,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116581,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116583,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116586,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116588,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116590,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116592,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116595,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116597,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116603,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 819
+    },
+    {
+     "t": 1785116606,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1562
+    },
+    {
+     "t": 1785116610,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1780
+    },
+    {
+     "t": 1785116614,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1561
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r33-s4",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785116550894,
+   "startup_ms": 2044.021,
+   "stall_count": 4,
+   "stalled_ms": 4690,
+   "jitter_ms": 648.4727619313401,
+   "e2e_p50_ms": 2124.774,
+   "e2e_p95_ms": 9639.16,
+   "bytes": 3900000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116552,
+     "bytes": 300000,
+     "frames": 2,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116554,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116557,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116559,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116561,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116563,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116565,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116569,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116571,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116573,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116575,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116577,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116579,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116581,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116583,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116586,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116589,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116592,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116594,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116596,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116601,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 888
+    },
+    {
+     "t": 1785116605,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1778
+    },
+    {
+     "t": 1785116608,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1123
+    },
+    {
+     "t": 1785116611,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 901
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r33-s5",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785116550894,
+   "startup_ms": 1992.62,
+   "stall_count": 3,
+   "stalled_ms": 5223,
+   "jitter_ms": 658.9648593476583,
+   "e2e_p50_ms": 1907.346,
+   "e2e_p95_ms": 10125.202,
+   "bytes": 3900000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116552,
+     "bytes": 300000,
+     "frames": 2,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116554,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116556,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116558,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116560,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116562,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116564,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116569,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116571,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116573,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116575,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116577,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116579,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116581,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116583,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116586,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116588,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116590,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116593,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116595,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116597,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116603,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 560
+    },
+    {
+     "t": 1785116608,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 3100
+    },
+    {
+     "t": 1785116611,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1563
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r33-s6",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785116550894,
+   "startup_ms": 1957.666,
+   "stall_count": 3,
+   "stalled_ms": 6108,
+   "jitter_ms": 725.6225175409602,
+   "e2e_p50_ms": 1881.232,
+   "e2e_p95_ms": 10085.797,
+   "bytes": 3900000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116552,
+     "bytes": 300000,
+     "frames": 2,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116554,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116556,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116558,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116560,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116562,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116564,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116569,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116571,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116573,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116575,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116577,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116579,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116581,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116583,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116586,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116588,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116590,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116592,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116594,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116597,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116602,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 124
+    },
+    {
+     "t": 1785116607,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 3324
+    },
+    {
+     "t": 1785116612,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 2660
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r33-s7",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785116550894,
+   "startup_ms": 1911.239,
+   "stall_count": 3,
+   "stalled_ms": 4401,
+   "jitter_ms": 669.1841185465752,
+   "e2e_p50_ms": 2526.826,
+   "e2e_p95_ms": 8965.923,
+   "bytes": 4050000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116552,
+     "bytes": 300000,
+     "frames": 2,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116554,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116556,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116558,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116560,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116562,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116564,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116569,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116571,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116573,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116575,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116577,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116579,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116581,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116584,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116586,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116588,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116590,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116593,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116595,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116597,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116602,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116606,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 2376
+    },
+    {
+     "t": 1785116609,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 902
+    },
+    {
+     "t": 1785116612,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1123
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r33-s8",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785116550894,
+   "startup_ms": 1835.827,
+   "stall_count": 3,
+   "stalled_ms": 5664,
+   "jitter_ms": 654.0180932338372,
+   "e2e_p50_ms": 1915.618,
+   "e2e_p95_ms": 9955.316,
+   "bytes": 3900000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116551,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116552,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116555,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116557,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116558,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116560,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116562,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116564,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116569,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116571,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116573,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116575,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116577,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116579,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116581,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116583,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116586,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116588,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116590,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116592,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116595,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116597,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116603,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1439
+    },
+    {
+     "t": 1785116607,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 2004
+    },
+    {
+     "t": 1785116612,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 2221
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r33-s9",
+   "run_id": "paper.hls.degrading.r3.1785116550",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785116550894,
+   "startup_ms": 1989.424,
+   "stall_count": 5,
+   "stalled_ms": 5670,
+   "jitter_ms": 730.4696127613413,
+   "e2e_p50_ms": 1797.987,
+   "e2e_p95_ms": 10100.92,
+   "bytes": 4050000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785116552,
+     "bytes": 300000,
+     "frames": 2,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116553,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116554,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116556,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116558,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116560,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116562,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116564,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116569,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116571,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116573,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116575,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116577,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116579,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116581,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116583,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116585,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116589,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116592,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116594,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116596,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785116600,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 88
+    },
+    {
+     "t": 1785116605,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 2660
+    },
+    {
+     "t": 1785116607,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 684
+    },
+    {
+     "t": 1785116610,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 900
+    },
+    {
+     "t": 1785116614,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 1338
+    }
+   ]
+  }
+ ]
+}

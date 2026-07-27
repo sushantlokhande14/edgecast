@@ -219,6 +219,42 @@ def latency_vs_stall(rows, filename):
     print("wrote", filename)
 
 
+def delivered_fraction(rows, filename):
+    """Goodput as a share of the rate the publisher actually offered.
+
+    The stalled-time column flatters WebRTC, because its loss happens in the
+    network where an arrival-gap stall model cannot see it, while the relay
+    path's loss is applied in the application and shows up directly. Delivered
+    fraction is the decodability-agnostic comparison that does not have that
+    blind spot. HLS is excluded: it adapts its offered rate by design, so the
+    ratio is not comparable.
+    """
+    offered = {"moq": 5000.0, "webrtc": 2500.0}
+    profs = profiles_present(rows)
+    fig, ax = plt.subplots(figsize=(11, 4.4))
+    width = 0.36
+    xs = range(len(profs))
+    for i, proto in enumerate(("moq", "webrtc")):
+        vals = [min(cell(rows, p, proto, "throughput_kbps") / offered[proto] * 100, 100) for p in profs]
+        offs = [x + (i - 0.5) * width for x in xs]
+        bars = ax.bar(offs, vals, width, label=f"{PROTO_LABEL[proto]}, offered {offered[proto]:.0f} kbps",
+                      color=PROTO_COLOR[proto], edgecolor="white")
+        for b, v in zip(bars, vals):
+            if v == v:
+                ax.annotate(f"{v:.0f}%", (b.get_x() + b.get_width() / 2, v), ha="center",
+                            xytext=(0, 2), textcoords="offset points", fontsize=7.5)
+    ax.set_xticks(list(xs))
+    ax.set_xticklabels(profs)
+    ax.set_ylabel("delivered share of offered bitrate (%)")
+    ax.set_ylim(0, 108)
+    ax.set_title("Delivered fraction of what the publisher offered\n(the quality proxy that the stall metric cannot fake)")
+    ax.legend(frameon=False, ncol=2, loc="upper right")
+    fig.tight_layout()
+    fig.savefig(os.path.join(OUT, filename))
+    plt.close(fig)
+    print("wrote", filename)
+
+
 def ab_compare(rows_a, rows_b, label_a, label_b, profiles, filename):
     """Side-by-side stalled % for the ABR diagnosis experiment."""
     fig, axes = plt.subplots(1, 2, figsize=(11, 4.2))
@@ -281,6 +317,7 @@ def main():
         "fig-throughput.png",
     )
     latency_vs_stall(rows, "fig-tradeoff.png")
+    delivered_fraction(rows, "fig-delivered.png")
     timeline(
         RESULTS,
         "burst-loss",

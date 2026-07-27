@@ -62,12 +62,22 @@ var (
 		Name: "edgecast_relay_upstream_subscriptions",
 		Help: "Active pull-through subscriptions to the upstream relay",
 	})
+	generationBumps = promauto.NewCounter(prometheus.CounterOpts{
+		Name: "edgecast_relay_generation_bumps_total",
+		Help: "Publisher restarts detected from a backwards group sequence",
+	})
 )
 
 // groupBuffer is one group being filled by ingest while any number of
 // subscriber writers stream it out concurrently.
+//
+// gen identifies the publisher generation this group belongs to. Group
+// sequence numbers restart at zero whenever a publisher restarts, so the
+// per-subscriber "newer than the last one I sent" filter needs a way to tell
+// a restart apart from a stale duplicate; see track.publishGroup.
 type groupBuffer struct {
 	seq    uint64
+	gen    uint64
 	mu     sync.Mutex
 	cond   *sync.Cond
 	objs   [][]byte // encoded objects (header + payload)
@@ -116,6 +126,7 @@ type track struct {
 	subs    map[*subscriber]struct{}
 	live    *groupBuffer // newest group; also the late-join cache
 	sourced bool         // fed by a local publisher or an upstream subscription
+	gen     uint64       // publisher generation, bumped when sequence numbers restart
 }
 
 func (t *track) addSub(s *subscriber) {
@@ -132,6 +143,18 @@ func (t *track) removeSub(s *subscriber) {
 
 func (t *track) publishGroup(g *groupBuffer) {
 	t.mu.Lock()
+	// A group sequence that moves backwards means the publisher restarted and
+	// began numbering from zero again. Without this, every subscriber whose
+	// filter still held the old high sequence number would silently discard
+	// the entire new stream, which in a relay tree blackholes whole regions
+	// until their connections happen to drop.
+	if t.live != nil && g.seq < t.live.seq {
+		t.gen++
+		generationBumps.Inc()
+		log.Printf("relay: track %q sequence restarted (%d after %d); generation now %d",
+			t.name, g.seq, t.live.seq, t.gen)
+	}
+	g.gen = t.gen
 	t.live = g
 	subs := make([]*subscriber, 0, len(t.subs))
 	for s := range t.subs {
@@ -172,7 +195,7 @@ func (s *subscriber) enqueue(g *groupBuffer) {
 
 func (s *subscriber) run(ctx context.Context) {
 	defer s.track.removeSub(s)
-	var last uint64
+	var last, lastGen uint64
 	started := false
 	for {
 		select {
@@ -181,11 +204,13 @@ func (s *subscriber) run(ctx context.Context) {
 		case <-s.conn.Context().Done():
 			return
 		case g := <-s.queue:
-			if started && g.seq <= last {
+			// Skip groups we have already passed, but only within the same
+			// publisher generation: a restart resets sequence numbers.
+			if started && g.gen == lastGen && g.seq <= last {
 				continue
 			}
 			started = true
-			last = g.seq
+			last, lastGen = g.seq, g.gen
 			if err := s.writeGroup(ctx, g); err != nil {
 				return
 			}

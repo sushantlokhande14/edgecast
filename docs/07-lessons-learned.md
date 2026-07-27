@@ -33,6 +33,24 @@ The first expctl sketch applied impairment to already-running sessions and read 
 
 The relay encodes each object once and hands the same immutable byte slice to every subscriber's writer via a small condition-variable buffer. With 100 subscribers per region, encoding per subscriber would have multiplied CPU by two orders of magnitude. The pattern (single producer appending to an immutable log, many readers indexing into it) is the same one that makes real relays and brokers cheap.
 
-## 7.8 Healthchecks plus reconnect loops beat startup ordering
+## 7.8 A metric can be correct and still describe nothing
+
+The most valuable lesson of the project came from a number that looked good. WebRTC reported a flat ~5.8% stalled time in every profile, including profiles where the emulator was destroying roughly ten million of its packets. Both facts were correct. The stall model measures gaps in arrival, and a stream that loses half its packets uniformly still arrives continuously, just thinner.
+
+The deeper point is architectural. The relay path applies backpressure **in the application**, so its degradation is explicit: whole groups dropped, counted, and visible as playout gaps. WebRTC has no application backpressure here, so its excess is destroyed **in the network**, where a transport-level metric cannot see it and only a decoder would. Two systems can be equally degraded and only one of them will say so.
+
+Practical rule: for every metric, ask what failure mode would leave it unchanged. If the answer is "a serious one", the metric needs a companion. Here the companion is delivered fraction of offered bitrate, which has no such blind spot, and the loss accounting exported by the emulator itself.
+
+## 7.9 Package-level metric registration is global
+
+Publisher metrics are declared with `promauto` at package scope. Because every role is compiled into one binary, all 18 containers registered and exported the publisher bitrate gauge, 17 of them reporting a constant zero. The dashboard panel showed 18 overlapping flat lines, and a naive `min_over_time` query returned zero, which would have supported a completely wrong conclusion about whether adaptation was working.
+
+Single-binary multi-role designs trade deployment simplicity for this hazard. Register role-specific collectors in the role's constructor, and treat any panel showing more series than there are logical producers as a defect.
+
+## 7.10 Prefer the product's own tool over a general-purpose one
+
+Capturing dashboard images by driving a generic headless Chromium produced Grafana's "failed to load application files" page every time, with no console errors and no failed requests to explain it. Grafana ships an image renderer service designed for exactly this; adding it to the compose file turned dashboard capture into one HTTP request. The detour also made the repository better, since snapshots are now a documented command rather than a manual screenshot.
+
+## 7.11 Healthchecks plus reconnect loops beat startup ordering
 
 21 containers with dependencies would be miserable with strict startup ordering. Every client retries with backoff and every server tolerates unknown tracks, so `docker compose up` converges from any order, and killing any container mid-run heals. Chaos tolerance fell out of ordinary reconnect hygiene.
