@@ -12,3 +12,9 @@ Roughly ordered by value per effort:
 8. **Multi-track scale runs.** Hundreds of tracks with Zipf-distributed popularity to measure relay cache behavior and memory.
 9. **CI.** A GitHub Actions job compiling the tree and running a 2-run micro-matrix in the runner to catch regressions in the measurement pipeline.
 10. **Priority experiments.** Implement object priorities (drop deltas before keyframes) and measure quality-of-experience under the same profiles.
+
+## Open issues
+
+- **`edgecast_pub_bitrate_kbps` intermittently reads zero.** The gauge read zero for the publisher instance across an entire 80-minute matrix while the publisher was demonstrably at its top tier, then reported correctly afterwards. Root cause unknown. Likely candidates: the admin server serving `/metrics` before the publisher goroutine performs its first `Set`, combined with package-level registration exporting the same metric name from every role. Fix direction: register role-owned collectors inside the role constructor and set an initial value before the admin server starts.
+- **Reconnect backoff is flat and unjittered.** The fault-injection experiment showed recovery taking longer than the outage itself, dominated by client backoff. Jittered exponential backoff plus a warm standby connection to a second relay would both shorten recovery and avoid synchronised reconnect storms.
+- **Delivered fraction is a coarse quality proxy.** It closes the measurement blind spot described in `docs/06-findings.md` section 6.2 only partially; frame-level decodability accounting would close it properly.

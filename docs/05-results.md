@@ -64,6 +64,7 @@ The honest cross-protocol quality proxy in this data is **delivered fraction of 
 - **Rate-capped profiles also load the emulator.** When a profile sets a rate cap, every packet goes through token-bucket scheduling instead of the clean-link fast path, so the MoQ path's absolute goodput under capped profiles is partly limited by emulator CPU. This is why home-wifi, a 50 Mbit cap that should comfortably carry 5 Mbps, still shows reduced MoQ goodput.
 - **HLS goodput can exceed its playback bitrate** because clients download ahead to fill a ten-second buffer during the measure window.
 - **HLS loss response is modelled, not simulated.** See the TCP limitation in `docs/02-architecture.md`. Treat high-loss HLS figures as directional.
+- **Known instrumentation defect: `edgecast_pub_bitrate_kbps` is unreliable.** The gauge read zero for the publisher instance through the matrix window even though the publisher was demonstrably running its top tier. The publisher's rate during the control arm is therefore established from delivered goodput (4665 kbps per session at baseline, which is impossible below a ~5000 kbps source) rather than from the gauge. The gauge reports correctly at the time of writing, so the defect is intermittent and not yet root-caused; it is listed as an open issue. No conclusion in this report depends on it.
 
 ## 5.4 Recovery after transient loss
 
