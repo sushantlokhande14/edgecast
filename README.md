@@ -25,7 +25,20 @@ docker compose run --rm expctl
 
 Results land in `results/summary.md`, `results/summary.csv`, and `results/raw/`. The full 120-run matrix: `docker compose run --rm -e MATRIX=/app/scenarios/full.yaml expctl`.
 
+## The written report
+
+A complete technical report is committed at **[docs/report/EdgeCast-Report.pdf](docs/report/EdgeCast-Report.pdf)**: motivation, architecture, a decision log covering every significant design choice and the alternatives rejected, experimental method, measured results with figures, findings, engineering failures and how they were resolved, and an analysis of what does and does not transfer to production. It is generated from the committed data, so its numbers cannot drift from `results/`.
+
+```bash
+docker run --rm -v "$PWD/tools/report:/w" -v "$PWD/results:/results:ro" \
+  -v "$PWD/docs/images:/out/images:ro" -v "$PWD/docs/report:/out" \
+  -e PAPER_DIR=/results/paper -e AB_DIR=/results/abr-ab \
+  mcr.microsoft.com/playwright:v1.49.0-noble sh /w/build.sh
+```
+
 ## Architecture
+
+![Topology](docs/images/diagram-topology.png)
 
 ```mermaid
 flowchart LR

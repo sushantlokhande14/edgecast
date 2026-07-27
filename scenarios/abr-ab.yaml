@@ -1,0 +1,32 @@
+# Diagnosis check for the adaptation-blindness result.
+#
+# The paper matrix showed MoQ subscribers stalling badly on capped mobile
+# profiles while the publisher held its top ladder tier, because its
+# backpressure signal only sees the publisher-to-relay uplink, which stays
+# clean. If that diagnosis is right, pinning the publisher to a rate the
+# access links can actually carry should remove most of the stalling without
+# touching the transport, the relay, or the emulator.
+#
+# Run this matrix with moq-pub recreated as ABR=false BITRATE_KBPS=1000, then
+# compare against the same profiles in results/paper.
+name: abr-ab
+warmup_seconds: 10
+measure_seconds: 50
+repetitions: 3
+
+protocols:
+  - name: moq
+    targets:
+      - moq-sub-us-west:8080
+      - moq-sub-us-east:8080
+      - moq-sub-eu-central:8080
+      - moq-sub-ap-south:8080
+      - moq-sub-ap-east:8080
+
+profiles:
+  - name: mobile-4g
+    apply: { delay_ms: 60, jitter_ms: 15, loss_pct: 0.5, rate_kbit: 12000 }
+  - name: mobile-3g
+    apply: { delay_ms: 150, jitter_ms: 40, loss_pct: 1.5, rate_kbit: 2000 }
+  - name: lossy
+    apply: { delay_ms: 40, jitter_ms: 10, loss_pct: 3, rate_kbit: 20000 }
