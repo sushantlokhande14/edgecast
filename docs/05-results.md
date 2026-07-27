@@ -45,7 +45,7 @@ Bold marks the best value per profile per metric. Full CSV: `results/paper/summa
 | WebRTC | **9,686,288** queue drops + 267k iid-loss drops | none (SFU forwards blindly) | **Largely no** |
 | HLS | n/a (TCP path) | 16,275 modelled retransmission pauses | Yes, as buffer underruns |
 
-The SFU ingested 876,308 RTP packets in this window and fanned them to 20 viewer sessions, so roughly 17.5M packets were offered to subscribers and about 10M of them were dropped at the emulated bottleneck. Yet WebRTC reports a flat ~5.8 percent stalled time in every profile.
+Nearly ten million packets bound for WebRTC subscribers were destroyed at the emulated bottleneck during this window, and zero were destroyed for MoQ subscribers. Yet WebRTC reports a flat ~5.8 percent stalled time in every profile, identical to its unimpaired baseline.
 
 Both facts are true because **the two architectures put their loss in different places**:
 
@@ -54,7 +54,7 @@ Both facts are true because **the two architectures put their loss in different 
 
 Because this testbed does not decode, it cannot see what that loss does to a picture. In a real client, roughly half the packets missing would mean severe artefacting or frozen frames, not smooth playback. **WebRTC's apparent resilience in the stall column is substantially an artefact of measuring arrival continuity rather than decodability.**
 
-The honest cross-protocol quality proxy in this data is goodput against offered rate. On mobile-3g, WebRTC delivered 1520 of 2500 kbps offered (61 percent) while MoQ delivered 245 of 5000 (5 percent). WebRTC is genuinely more robust here, but by a factor of roughly twelve on delivered fraction, not by the factor of sixteen the stall column implies, and both numbers are heavily influenced by the offered-rate mismatch discussed in section 6.3.
+The honest cross-protocol quality proxy in this data is **delivered fraction of offered bitrate**, which has no such blind spot. On mobile-3g, WebRTC delivered 1520 of the 2500 kbps it offered (61 percent) while MoQ delivered 245 of 5000 (5 percent). WebRTC is genuinely more robust under these conditions, but the honest gap is on delivered fraction, and a large part of MoQ's share is explained by the offered-rate mismatch in section 6.3 rather than by anything about QUIC.
 
 ## 5.3 Other things needed to read the table honestly
 

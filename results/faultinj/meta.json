@@ -1,0 +1,9 @@
+{
+  "run_id": "faultinj-1785118219",
+  "victim_container": "edgecast-relay-eu-central-1",
+  "killed_unix": 1785118246,
+  "restarted_unix": 1785118262,
+  "treatment_region": "eu-central",
+  "control_region": "us-east",
+  "note": "eu-central subscribers depend on the killed edge relay; us-east is unaffected and serves as the control."
+}

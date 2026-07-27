@@ -17,17 +17,27 @@ IN = os.environ.get("FAULT_DIR", "/results/faultinj")
 OUT = os.environ.get("OUT_DIR", "/out")
 
 
-def series(path, killed):
+def series(path, killed, lo=-30, hi=60):
+    """Mean per-session throughput on a continuous axis.
+
+    A session that receives nothing in a given second emits no bucket at all,
+    so averaging only over buckets that exist makes an outage invisible: the
+    surviving sessions hold the mean up. Missing seconds must be counted as
+    zero, over a fixed session count and a fixed time axis.
+    """
     with open(path) as fh:
         sessions = json.load(fh)
-    acc = defaultdict(list)
+    n = max(len(sessions), 1)
+    total = defaultdict(float)
     stalls = 0.0
     for s in sessions:
         stalls += s.get("stalled_ms") or 0
         for sec in s.get("seconds") or []:
-            acc[sec["t"] - killed].append(sec["bytes"] * 8 / 1000.0)
-    ts = sorted(t for t in acc if -40 <= t <= 70)
-    return ts, [sum(acc[t]) / len(acc[t]) for t in ts], stalls / max(len(sessions), 1), len(sessions)
+            rel = sec["t"] - killed
+            if lo <= rel <= hi:
+                total[rel] += sec["bytes"] * 8 / 1000.0
+    ts = list(range(lo, hi + 1))
+    return ts, [total.get(t, 0.0) / n for t in ts], stalls / n, len(sessions)
 
 
 def main():
@@ -40,8 +50,10 @@ def main():
     c_ts, c_ys, c_stall, c_n = series(os.path.join(IN, "control-us-east.json"), killed)
 
     # Recovery: first second after restart at which the treatment region is
-    # back to 90% of its own pre-kill baseline.
-    base = [y for t, y in zip(t_ts, t_ys) if t < 0]
+    # back to 90% of its own pre-kill baseline. The baseline window is the
+    # settled seconds just before the kill, not all of t<0, which would
+    # include the ramp before sessions were established and understate it.
+    base = [y for t, y in zip(t_ts, t_ys) if -12 <= t <= -2]
     baseline = sum(base) / len(base) if base else 0
     recovery = None
     for t, y in zip(t_ts, t_ys):
