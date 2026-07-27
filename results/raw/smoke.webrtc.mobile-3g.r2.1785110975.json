@@ -1,0 +1,7291 @@
+{
+ "matrix": "smoke",
+ "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+ "protocol": "webrtc",
+ "profile": "mobile-3g",
+ "profile_def": {
+  "name": "mobile-3g",
+  "apply": {
+   "delay_ms": 150,
+   "jitter_ms": 40,
+   "loss_pct": 1.5,
+   "rate_kbit": 2000
+  }
+ },
+ "repetition": 2,
+ "started_unix_ms": 1785110975807,
+ "warmup_s": 10,
+ "measure_s": 45,
+ "sessions": [
+  {
+   "id": "webrtc-us-east-r7-s0",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "us-east",
+   "start_unix_ms": 1785110975807,
+   "startup_ms": 1697.907,
+   "stall_count": 4,
+   "stalled_ms": 2746.812,
+   "jitter_ms": 20.073347753539096,
+   "e2e_p50_ms": 283,
+   "e2e_p95_ms": 341,
+   "bytes": 9409663,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110977,
+     "bytes": 113039,
+     "frames": 96,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110978,
+     "bytes": 204573,
+     "frames": 172,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 175439,
+     "frames": 148,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 165234,
+     "frames": 139,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 28278,
+     "frames": 24,
+     "stall_ms": 548.782
+    },
+    {
+     "t": 1785110982,
+     "bytes": 59739,
+     "frames": 50,
+     "stall_ms": 809.081
+    },
+    {
+     "t": 1785110983,
+     "bytes": 172017,
+     "frames": 144,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 181700,
+     "frames": 153,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 206868,
+     "frames": 175,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 179790,
+     "frames": 152,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 195912,
+     "frames": 165,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 173895,
+     "frames": 146,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 173561,
+     "frames": 146,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 173822,
+     "frames": 146,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 173112,
+     "frames": 146,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 174939,
+     "frames": 146,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 169773,
+     "frames": 143,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 179144,
+     "frames": 150,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 174834,
+     "frames": 147,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 181356,
+     "frames": 152,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 192990,
+     "frames": 163,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 181095,
+     "frames": 152,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 177234,
+     "frames": 149,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 172956,
+     "frames": 145,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 173478,
+     "frames": 145,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 176744,
+     "frames": 148,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 171756,
+     "frames": 144,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 177390,
+     "frames": 150,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 168678,
+     "frames": 141,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 181512,
+     "frames": 153,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 177912,
+     "frames": 150,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 169283,
+     "frames": 142,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 166956,
+     "frames": 140,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 177495,
+     "frames": 149,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 180312,
+     "frames": 152,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 90939,
+     "frames": 76,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 21600,
+     "frames": 18,
+     "stall_ms": 584.069
+    },
+    {
+     "t": 1785111014,
+     "bytes": 110400,
+     "frames": 92,
+     "stall_ms": 804.88
+    },
+    {
+     "t": 1785111015,
+     "bytes": 170556,
+     "frames": 143,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 171234,
+     "frames": 144,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 170817,
+     "frames": 143,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 178622,
+     "frames": 150,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 165161,
+     "frames": 139,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 172434,
+     "frames": 145,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 185373,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 168156,
+     "frames": 141,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 169095,
+     "frames": 142,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 170712,
+     "frames": 144,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 171756,
+     "frames": 144,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 173895,
+     "frames": 146,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 168678,
+     "frames": 141,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 172017,
+     "frames": 144,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 167822,
+     "frames": 141,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 171078,
+     "frames": 143,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 176973,
+     "frames": 149,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 173634,
+     "frames": 146,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 170556,
+     "frames": 143,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 15339,
+     "frames": 13,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-us-east-r7-s1",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "us-east",
+   "start_unix_ms": 1785110975807,
+   "startup_ms": 1930.012,
+   "stall_count": 4,
+   "stalled_ms": 2755.881,
+   "jitter_ms": 21.523150916196386,
+   "e2e_p50_ms": 283,
+   "e2e_p95_ms": 329,
+   "bytes": 11787037,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110977,
+     "bytes": 55095,
+     "frames": 47,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110978,
+     "bytes": 244380,
+     "frames": 208,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 218534,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 207756,
+     "frames": 174,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 33339,
+     "frames": 28,
+     "stall_ms": 542.536
+    },
+    {
+     "t": 1785110982,
+     "bytes": 66678,
+     "frames": 56,
+     "stall_ms": 811.374
+    },
+    {
+     "t": 1785110983,
+     "bytes": 221895,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 220956,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 230034,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 220746,
+     "frames": 187,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 236451,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 225234,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 221217,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 227822,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 212973,
+     "frames": 179,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 227039,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 221112,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 220434,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 223773,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 219756,
+     "frames": 184,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 221895,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 231839,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 222156,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 222417,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 223356,
+     "frames": 187,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 235929,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 228573,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 221895,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 225651,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 224190,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 226434,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 219495,
+     "frames": 184,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 219756,
+     "frames": 184,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 218295,
+     "frames": 183,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 217773,
+     "frames": 183,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 113217,
+     "frames": 95,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 36000,
+     "frames": 30,
+     "stall_ms": 593.919
+    },
+    {
+     "t": 1785111014,
+     "bytes": 138939,
+     "frames": 116,
+     "stall_ms": 808.052
+    },
+    {
+     "t": 1785111015,
+     "bytes": 212295,
+     "frames": 178,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 223283,
+     "frames": 187,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 223617,
+     "frames": 187,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 220017,
+     "frames": 184,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 219078,
+     "frames": 183,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 227634,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 212817,
+     "frames": 178,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 219756,
+     "frames": 184,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 220173,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 215739,
+     "frames": 180,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 228051,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 220434,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 215217,
+     "frames": 180,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 214017,
+     "frames": 179,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 217773,
+     "frames": 183,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 213756,
+     "frames": 179,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 220434,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 216156,
+     "frames": 181,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 216156,
+     "frames": 181,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 27600,
+     "frames": 23,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-us-east-r7-s2",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "us-east",
+   "start_unix_ms": 1785110975807,
+   "startup_ms": 1718.458,
+   "stall_count": 4,
+   "stalled_ms": 2731.725,
+   "jitter_ms": 19.041623721800526,
+   "e2e_p50_ms": 282,
+   "e2e_p95_ms": 331,
+   "bytes": 9701632,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110977,
+     "bytes": 116639,
+     "frames": 99,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110978,
+     "bytes": 195912,
+     "frames": 165,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 185217,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 168156,
+     "frames": 141,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 26066,
+     "frames": 22,
+     "stall_ms": 540.554
+    },
+    {
+     "t": 1785110982,
+     "bytes": 59739,
+     "frames": 50,
+     "stall_ms": 802.139
+    },
+    {
+     "t": 1785110983,
+     "bytes": 181356,
+     "frames": 152,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 184434,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 183495,
+     "frames": 154,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 181356,
+     "frames": 152,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 184883,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 182817,
+     "frames": 153,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 180761,
+     "frames": 152,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 178100,
+     "frames": 150,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 182817,
+     "frames": 153,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 180573,
+     "frames": 152,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 201839,
+     "frames": 170,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 203007,
+     "frames": 172,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 181617,
+     "frames": 152,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 178956,
+     "frames": 150,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 179634,
+     "frames": 151,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 184434,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 182034,
+     "frames": 153,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 182034,
+     "frames": 153,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 182556,
+     "frames": 153,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 179634,
+     "frames": 151,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 183651,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 186156,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 185634,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 188461,
+     "frames": 160,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 180678,
+     "frames": 151,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 183422,
+     "frames": 154,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 174156,
+     "frames": 146,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 173634,
+     "frames": 146,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 179895,
+     "frames": 151,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 94956,
+     "frames": 80,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 26139,
+     "frames": 22,
+     "stall_ms": 587.139
+    },
+    {
+     "t": 1785111014,
+     "bytes": 112695,
+     "frames": 95,
+     "stall_ms": 801.893
+    },
+    {
+     "t": 1785111015,
+     "bytes": 179217,
+     "frames": 150,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 176556,
+     "frames": 148,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 172539,
+     "frames": 144,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 184956,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 175961,
+     "frames": 148,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 172695,
+     "frames": 145,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 188817,
+     "frames": 158,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 174417,
+     "frames": 146,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 176817,
+     "frames": 148,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 176222,
+     "frames": 148,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 172539,
+     "frames": 144,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 183234,
+     "frames": 154,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 179895,
+     "frames": 151,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 175617,
+     "frames": 147,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 174417,
+     "frames": 146,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 178017,
+     "frames": 149,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 180939,
+     "frames": 151,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 177339,
+     "frames": 148,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 180156,
+     "frames": 151,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 23739,
+     "frames": 20,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-us-east-r7-s3",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "us-east",
+   "start_unix_ms": 1785110975807,
+   "startup_ms": 1822.437,
+   "stall_count": 4,
+   "stalled_ms": 2739.3239999999996,
+   "jitter_ms": 17.46911078934785,
+   "e2e_p50_ms": 283,
+   "e2e_p95_ms": 326,
+   "bytes": 12526008,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110977,
+     "bytes": 87422,
+     "frames": 74,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110978,
+     "bytes": 246990,
+     "frames": 208,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 237578,
+     "frames": 200,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 215634,
+     "frames": 181,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 36939,
+     "frames": 31,
+     "stall_ms": 531.317
+    },
+    {
+     "t": 1785110982,
+     "bytes": 71739,
+     "frames": 60,
+     "stall_ms": 803.367
+    },
+    {
+     "t": 1785110983,
+     "bytes": 234834,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 233373,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 237234,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 234678,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 238017,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 240156,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 233373,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 242190,
+     "frames": 204,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 239217,
+     "frames": 200,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 237129,
+     "frames": 200,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 237912,
+     "frames": 200,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 237078,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 240939,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 233217,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 236639,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 242034,
+     "frames": 203,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 234156,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 238851,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 239112,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 234939,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 233634,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 235512,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 226851,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 244444,
+     "frames": 206,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 233478,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 231912,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 232434,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 232434,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 231078,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 126678,
+     "frames": 106,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 34539,
+     "frames": 29,
+     "stall_ms": 593.59
+    },
+    {
+     "t": 1785111014,
+     "bytes": 150417,
+     "frames": 126,
+     "stall_ms": 811.05
+    },
+    {
+     "t": 1785111015,
+     "bytes": 229617,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 237234,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 225756,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 238017,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 236712,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 240207,
+     "frames": 203,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 232695,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 235773,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 243651,
+     "frames": 205,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 230034,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 233478,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 234417,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 230973,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 228083,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 240573,
+     "frames": 202,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 238434,
+     "frames": 200,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 227895,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 231234,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 236295,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 20139,
+     "frames": 17,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-us-east-r7-s4",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "us-east",
+   "start_unix_ms": 1785110975807,
+   "startup_ms": 1588.737,
+   "stall_count": 4,
+   "stalled_ms": 2759.608,
+   "jitter_ms": 21.366494669031535,
+   "e2e_p50_ms": 283,
+   "e2e_p95_ms": 332,
+   "bytes": 10118445,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110977,
+     "bytes": 146190,
+     "frames": 124,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110978,
+     "bytes": 207495,
+     "frames": 174,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 192761,
+     "frames": 162,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 171912,
+     "frames": 145,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 28539,
+     "frames": 24,
+     "stall_ms": 540.25
+    },
+    {
+     "t": 1785110982,
+     "bytes": 57078,
+     "frames": 48,
+     "stall_ms": 813.807
+    },
+    {
+     "t": 1785110983,
+     "bytes": 189756,
+     "frames": 159,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 188556,
+     "frames": 158,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 187356,
+     "frames": 157,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 188817,
+     "frames": 158,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 186573,
+     "frames": 157,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 211178,
+     "frames": 178,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 186678,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 189495,
+     "frames": 159,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 183756,
+     "frames": 154,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 231702,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 189756,
+     "frames": 159,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 189078,
+     "frames": 158,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 192573,
+     "frames": 162,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 190622,
+     "frames": 160,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 185217,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 191478,
+     "frames": 160,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 179895,
+     "frames": 151,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 189161,
+     "frames": 159,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 189912,
+     "frames": 160,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 190956,
+     "frames": 160,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 184851,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 190434,
+     "frames": 160,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 188712,
+     "frames": 159,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 191790,
+     "frames": 162,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 186156,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 191634,
+     "frames": 161,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 181512,
+     "frames": 153,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 188556,
+     "frames": 158,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 185895,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 99005,
+     "frames": 83,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 23739,
+     "frames": 20,
+     "stall_ms": 602.776
+    },
+    {
+     "t": 1785111014,
+     "bytes": 118695,
+     "frames": 100,
+     "stall_ms": 802.775
+    },
+    {
+     "t": 1785111015,
+     "bytes": 196173,
+     "frames": 165,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 175095,
+     "frames": 147,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 186417,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 185634,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 186678,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 185634,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 184956,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 190956,
+     "frames": 160,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 181095,
+     "frames": 152,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 180083,
+     "frames": 151,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 187356,
+     "frames": 157,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 188295,
+     "frames": 158,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 179478,
+     "frames": 150,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 203112,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 185478,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 179373,
+     "frames": 151,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 183495,
+     "frames": 154,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 185895,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 185373,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 20400,
+     "frames": 17,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-us-east-r7-s5",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "us-east",
+   "start_unix_ms": 1785110975807,
+   "startup_ms": 2087.659,
+   "stall_count": 4,
+   "stalled_ms": 2756.3869999999997,
+   "jitter_ms": 19.820010558583608,
+   "e2e_p50_ms": 283,
+   "e2e_p95_ms": 332,
+   "bytes": 10773740,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110977,
+     "bytes": 23739,
+     "frames": 20,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110978,
+     "bytes": 246414,
+     "frames": 211,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 217773,
+     "frames": 183,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 187617,
+     "frames": 157,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 29739,
+     "frames": 25,
+     "stall_ms": 549.225
+    },
+    {
+     "t": 1785110982,
+     "bytes": 62400,
+     "frames": 52,
+     "stall_ms": 801.054
+    },
+    {
+     "t": 1785110983,
+     "bytes": 205356,
+     "frames": 172,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 207756,
+     "frames": 174,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 201078,
+     "frames": 168,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 210500,
+     "frames": 177,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 204051,
+     "frames": 172,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 203634,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 200556,
+     "frames": 168,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 204678,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 200556,
+     "frames": 168,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 203405,
+     "frames": 170,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 199095,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 204051,
+     "frames": 172,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 202017,
+     "frames": 169,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 204417,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 197112,
+     "frames": 166,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 206295,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 200034,
+     "frames": 168,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 200556,
+     "frames": 168,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 206556,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 199878,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 199617,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 205773,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 201912,
+     "frames": 170,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 207651,
+     "frames": 175,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 206973,
+     "frames": 174,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 218795,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 198678,
+     "frames": 166,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 203217,
+     "frames": 170,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 196695,
+     "frames": 165,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 100539,
+     "frames": 84,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 31200,
+     "frames": 26,
+     "stall_ms": 584.26
+    },
+    {
+     "t": 1785111014,
+     "bytes": 126939,
+     "frames": 106,
+     "stall_ms": 821.848
+    },
+    {
+     "t": 1785111015,
+     "bytes": 200817,
+     "frames": 168,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 204468,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 210417,
+     "frames": 176,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 199356,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 191895,
+     "frames": 161,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 200817,
+     "frames": 168,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 202434,
+     "frames": 170,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 200817,
+     "frames": 168,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 199095,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 216468,
+     "frames": 183,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 202695,
+     "frames": 170,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 199095,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 193878,
+     "frames": 162,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 212295,
+     "frames": 178,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 196956,
+     "frames": 165,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 191112,
+     "frames": 161,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 200295,
+     "frames": 168,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 202017,
+     "frames": 169,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 203561,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 18000,
+     "frames": 15,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-us-east-r7-s6",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "us-east",
+   "start_unix_ms": 1785110975807,
+   "startup_ms": 1534.533,
+   "stall_count": 4,
+   "stalled_ms": 2730.774,
+   "jitter_ms": 16.434339383526794,
+   "e2e_p50_ms": 281,
+   "e2e_p95_ms": 325,
+   "bytes": 12551351,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110977,
+     "bytes": 148746,
+     "frames": 127,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110978,
+     "bytes": 243495,
+     "frames": 204,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 238539,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 209217,
+     "frames": 175,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 34800,
+     "frames": 29,
+     "stall_ms": 537.506
+    },
+    {
+     "t": 1785110982,
+     "bytes": 71217,
+     "frames": 60,
+     "stall_ms": 800.224
+    },
+    {
+     "t": 1785110983,
+     "bytes": 236451,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 234834,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 227217,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 234834,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 214173,
+     "frames": 180,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 228156,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 224973,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 239895,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 241356,
+     "frames": 202,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 227790,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 235878,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 235356,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 229095,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 231756,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 241961,
+     "frames": 203,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 228834,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 244622,
+     "frames": 205,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 225495,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 240834,
+     "frames": 202,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 234156,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 229512,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 224712,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 211356,
+     "frames": 177,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 219651,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 226278,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 233373,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 236400,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 235200,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 238017,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 124278,
+     "frames": 104,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 39600,
+     "frames": 33,
+     "stall_ms": 590.272
+    },
+    {
+     "t": 1785111014,
+     "bytes": 149217,
+     "frames": 125,
+     "stall_ms": 802.772
+    },
+    {
+     "t": 1785111015,
+     "bytes": 248034,
+     "frames": 208,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 235961,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 234834,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 242139,
+     "frames": 202,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 231005,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 246344,
+     "frames": 206,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 242744,
+     "frames": 203,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 235878,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 239478,
+     "frames": 200,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 241283,
+     "frames": 202,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 239895,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 239478,
+     "frames": 200,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 233217,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 244017,
+     "frames": 204,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 237756,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 240573,
+     "frames": 202,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 241773,
+     "frames": 203,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 241773,
+     "frames": 203,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 232017,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 31878,
+     "frames": 27,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-us-east-r7-s7",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "us-east",
+   "start_unix_ms": 1785110975807,
+   "startup_ms": 1885.153,
+   "stall_count": 4,
+   "stalled_ms": 2753.3089999999997,
+   "jitter_ms": 17.267134204738092,
+   "e2e_p50_ms": 281,
+   "e2e_p95_ms": 326,
+   "bytes": 12531919,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110977,
+     "bytes": 74483,
+     "frames": 63,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110978,
+     "bytes": 235929,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 237234,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 215478,
+     "frames": 180,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 37200,
+     "frames": 31,
+     "stall_ms": 538.871
+    },
+    {
+     "t": 1785110982,
+     "bytes": 70956,
+     "frames": 60,
+     "stall_ms": 803.367
+    },
+    {
+     "t": 1785110983,
+     "bytes": 233112,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 235773,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 232800,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 225756,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 227561,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 236034,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 228312,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 239634,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 234156,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 234573,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 225234,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 234678,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 229512,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 242034,
+     "frames": 203,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 235095,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 233217,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 232205,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 226695,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 235283,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 228834,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 227217,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 229961,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 227895,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 236534,
+     "frames": 200,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 217878,
+     "frames": 182,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 239373,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 244590,
+     "frames": 206,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 243756,
+     "frames": 204,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 239895,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 127283,
+     "frames": 107,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 36000,
+     "frames": 30,
+     "stall_ms": 590.743
+    },
+    {
+     "t": 1785111014,
+     "bytes": 153078,
+     "frames": 128,
+     "stall_ms": 820.328
+    },
+    {
+     "t": 1785111015,
+     "bytes": 240761,
+     "frames": 202,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 235878,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 244173,
+     "frames": 205,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 237756,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 242034,
+     "frames": 203,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 240939,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 235617,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 243234,
+     "frames": 204,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 238956,
+     "frames": 200,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 235617,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 238173,
+     "frames": 200,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 240156,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 241878,
+     "frames": 202,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 238173,
+     "frames": 200,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 234417,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 248034,
+     "frames": 208,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 243234,
+     "frames": 204,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 238695,
+     "frames": 200,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 244017,
+     "frames": 204,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 24939,
+     "frames": 21,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-us-east-r7-s8",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "us-east",
+   "start_unix_ms": 1785110975807,
+   "startup_ms": 1608.816,
+   "stall_count": 4,
+   "stalled_ms": 2761.9480000000003,
+   "jitter_ms": 18.787230736233553,
+   "e2e_p50_ms": 281,
+   "e2e_p95_ms": 329,
+   "bytes": 9842887,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110977,
+     "bytes": 138312,
+     "frames": 117,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110978,
+     "bytes": 214100,
+     "frames": 180,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 185373,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 163200,
+     "frames": 136,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 32139,
+     "frames": 27,
+     "stall_ms": 540.341
+    },
+    {
+     "t": 1785110982,
+     "bytes": 59217,
+     "frames": 50,
+     "stall_ms": 807.644
+    },
+    {
+     "t": 1785110983,
+     "bytes": 180156,
+     "frames": 151,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 194973,
+     "frames": 164,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 180990,
+     "frames": 153,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 185112,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 179790,
+     "frames": 152,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 185217,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 175512,
+     "frames": 148,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 182295,
+     "frames": 153,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 178434,
+     "frames": 150,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 183756,
+     "frames": 154,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 185373,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 178956,
+     "frames": 150,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 183234,
+     "frames": 154,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 177839,
+     "frames": 150,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 182556,
+     "frames": 153,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 180156,
+     "frames": 151,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 178017,
+     "frames": 149,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 176295,
+     "frames": 148,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 183129,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 173373,
+     "frames": 146,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 183756,
+     "frames": 154,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 179217,
+     "frames": 150,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 181700,
+     "frames": 153,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 187095,
+     "frames": 157,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 186156,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 181878,
+     "frames": 152,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 183495,
+     "frames": 154,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 179217,
+     "frames": 150,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 181878,
+     "frames": 152,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 100800,
+     "frames": 84,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 22800,
+     "frames": 19,
+     "stall_ms": 591.365
+    },
+    {
+     "t": 1785111014,
+     "bytes": 112800,
+     "frames": 94,
+     "stall_ms": 822.598
+    },
+    {
+     "t": 1785111015,
+     "bytes": 186312,
+     "frames": 157,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 190539,
+     "frames": 159,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 179895,
+     "frames": 151,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 185478,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 193773,
+     "frames": 163,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 197634,
+     "frames": 166,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 190173,
+     "frames": 160,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 179217,
+     "frames": 150,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 186939,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 178017,
+     "frames": 149,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 198939,
+     "frames": 166,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 195651,
+     "frames": 165,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 176556,
+     "frames": 148,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 171495,
+     "frames": 144,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 187878,
+     "frames": 157,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 180678,
+     "frames": 151,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 182566,
+     "frames": 154,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 180156,
+     "frames": 151,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 182295,
+     "frames": 153,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 20400,
+     "frames": 17,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-us-east-r7-s9",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "us-east",
+   "start_unix_ms": 1785110975807,
+   "startup_ms": 1825.56,
+   "stall_count": 4,
+   "stalled_ms": 2745.662,
+   "jitter_ms": 18.07766460675901,
+   "e2e_p50_ms": 281,
+   "e2e_p95_ms": 327,
+   "bytes": 12336498,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110977,
+     "bytes": 88622,
+     "frames": 75,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110978,
+     "bytes": 230190,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 229095,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 198834,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 41478,
+     "frames": 35,
+     "stall_ms": 537.321
+    },
+    {
+     "t": 1785110982,
+     "bytes": 71739,
+     "frames": 60,
+     "stall_ms": 798.899
+    },
+    {
+     "t": 1785110983,
+     "bytes": 223773,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 227373,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 220434,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 221895,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 210688,
+     "frames": 177,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 229512,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 214017,
+     "frames": 179,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 226434,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 231005,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 224712,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 225495,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 233217,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 223512,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 231161,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 230556,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 223356,
+     "frames": 187,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 222156,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 226017,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 223700,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 222417,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 225339,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 232278,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 219839,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 216500,
+     "frames": 182,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 221373,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 235700,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 244017,
+     "frames": 204,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 236295,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 240605,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 132000,
+     "frames": 110,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 32139,
+     "frames": 27,
+     "stall_ms": 587.436
+    },
+    {
+     "t": 1785111014,
+     "bytes": 154278,
+     "frames": 129,
+     "stall_ms": 822.006
+    },
+    {
+     "t": 1785111015,
+     "bytes": 236400,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 241878,
+     "frames": 202,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 239895,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 240573,
+     "frames": 202,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 242973,
+     "frames": 204,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 234834,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 245895,
+     "frames": 206,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 230556,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 239478,
+     "frames": 200,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 240939,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 241095,
+     "frames": 202,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 242556,
+     "frames": 203,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 243422,
+     "frames": 204,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 242556,
+     "frames": 203,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 245895,
+     "frames": 206,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 246834,
+     "frames": 207,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 232851,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 240344,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 242973,
+     "frames": 204,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 22800,
+     "frames": 19,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-eu-central-r7-s0",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "eu-central",
+   "start_unix_ms": 1785110975808,
+   "startup_ms": 2001.282,
+   "stall_count": 4,
+   "stalled_ms": 2739.722,
+   "jitter_ms": 16.616139101796538,
+   "e2e_p50_ms": 301,
+   "e2e_p95_ms": 349,
+   "bytes": 10593511,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110977,
+     "bytes": 44295,
+     "frames": 38,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110978,
+     "bytes": 224085,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 199617,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 187251,
+     "frames": 158,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 32400,
+     "frames": 27,
+     "stall_ms": 533.246
+    },
+    {
+     "t": 1785110982,
+     "bytes": 59478,
+     "frames": 50,
+     "stall_ms": 806.611
+    },
+    {
+     "t": 1785110983,
+     "bytes": 198834,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 204678,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 198573,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 197634,
+     "frames": 166,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 200712,
+     "frames": 169,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 206222,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 199356,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 199356,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 211251,
+     "frames": 178,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 204573,
+     "frames": 172,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 199773,
+     "frames": 168,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 205773,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 198834,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 200034,
+     "frames": 168,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 201234,
+     "frames": 169,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 196956,
+     "frames": 165,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 202956,
+     "frames": 170,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 198573,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 198573,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 199356,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 200817,
+     "frames": 168,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 202173,
+     "frames": 170,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 200900,
+     "frames": 169,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 203300,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 211356,
+     "frames": 177,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 205700,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 207912,
+     "frames": 175,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 203373,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 195078,
+     "frames": 163,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 103617,
+     "frames": 87,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 27600,
+     "frames": 23,
+     "stall_ms": 586.552
+    },
+    {
+     "t": 1785111014,
+     "bytes": 126156,
+     "frames": 106,
+     "stall_ms": 813.313
+    },
+    {
+     "t": 1785111015,
+     "bytes": 199356,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 191634,
+     "frames": 161,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 196278,
+     "frames": 164,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 192417,
+     "frames": 161,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 200817,
+     "frames": 168,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 192156,
+     "frames": 161,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 198156,
+     "frames": 166,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 196017,
+     "frames": 164,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 191634,
+     "frames": 161,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 195756,
+     "frames": 164,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 198834,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 195234,
+     "frames": 164,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 193544,
+     "frames": 162,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 192939,
+     "frames": 161,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 196017,
+     "frames": 164,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 192573,
+     "frames": 162,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 197895,
+     "frames": 166,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 196278,
+     "frames": 164,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 194817,
+     "frames": 163,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 22800,
+     "frames": 19,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-eu-central-r7-s1",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "eu-central",
+   "start_unix_ms": 1785110975808,
+   "startup_ms": 2235.817,
+   "stall_count": 4,
+   "stalled_ms": 2748.453,
+   "jitter_ms": 15.181629356382988,
+   "e2e_p50_ms": 300,
+   "e2e_p95_ms": 347,
+   "bytes": 12054357,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110978,
+     "bytes": 235197,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 222939,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 210051,
+     "frames": 177,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 31805,
+     "frames": 27,
+     "stall_ms": 529.699
+    },
+    {
+     "t": 1785110982,
+     "bytes": 77478,
+     "frames": 65,
+     "stall_ms": 802.187
+    },
+    {
+     "t": 1785110983,
+     "bytes": 233529,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 228156,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 233217,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 225234,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 228834,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 231912,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 225339,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 224973,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 226956,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 225651,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 234051,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 226017,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 231495,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 224295,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 226278,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 228834,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 224817,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 233300,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 230034,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 229878,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 224190,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 230034,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 225495,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 235700,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 228156,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 236817,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 231912,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 223617,
+     "frames": 187,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 225422,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 117078,
+     "frames": 98,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 41478,
+     "frames": 35,
+     "stall_ms": 603.032
+    },
+    {
+     "t": 1785111014,
+     "bytes": 138678,
+     "frames": 116,
+     "stall_ms": 813.535
+    },
+    {
+     "t": 1785111015,
+     "bytes": 225944,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 224295,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 220695,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 236556,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 247251,
+     "frames": 208,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 219234,
+     "frames": 184,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 224817,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 224817,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 220434,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 224034,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 228678,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 221895,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 222573,
+     "frames": 187,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 220851,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 227895,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 222834,
+     "frames": 187,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 221112,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 242556,
+     "frames": 203,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 239039,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 30000,
+     "frames": 25,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-eu-central-r7-s2",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "eu-central",
+   "start_unix_ms": 1785110975808,
+   "startup_ms": 2250.288,
+   "stall_count": 4,
+   "stalled_ms": 2735.707,
+   "jitter_ms": 18.844597753528483,
+   "e2e_p50_ms": 300,
+   "e2e_p95_ms": 346,
+   "bytes": 12125860,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110978,
+     "bytes": 218919,
+     "frames": 187,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 232278,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 207234,
+     "frames": 174,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 40539,
+     "frames": 34,
+     "stall_ms": 531.154
+    },
+    {
+     "t": 1785110982,
+     "bytes": 70017,
+     "frames": 59,
+     "stall_ms": 799.002
+    },
+    {
+     "t": 1785110983,
+     "bytes": 235095,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 222761,
+     "frames": 187,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 230295,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 234312,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 237651,
+     "frames": 200,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 228417,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 228834,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 235251,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 232695,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 230295,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 228156,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 234417,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 227373,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 236712,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 229700,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 227373,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 226956,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 238956,
+     "frames": 200,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 222417,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 235878,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 229356,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 237234,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 224973,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 234990,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 236817,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 226278,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 230483,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 222939,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 226017,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 123078,
+     "frames": 103,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 38400,
+     "frames": 32,
+     "stall_ms": 600.486
+    },
+    {
+     "t": 1785111014,
+     "bytes": 144156,
+     "frames": 121,
+     "stall_ms": 805.065
+    },
+    {
+     "t": 1785111015,
+     "bytes": 223095,
+     "frames": 187,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 229773,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 226956,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 226956,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 225600,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 240051,
+     "frames": 202,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 225756,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 226956,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 228573,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 227822,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 224556,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 228678,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 224817,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 235356,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 230900,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 227217,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 217617,
+     "frames": 182,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 232956,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 228834,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 26139,
+     "frames": 22,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-eu-central-r7-s3",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "eu-central",
+   "start_unix_ms": 1785110975808,
+   "startup_ms": 1885.231,
+   "stall_count": 4,
+   "stalled_ms": 2751.133,
+   "jitter_ms": 17.114921863738807,
+   "e2e_p50_ms": 301,
+   "e2e_p95_ms": 345,
+   "bytes": 11493499,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110977,
+     "bytes": 78083,
+     "frames": 66,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110978,
+     "bytes": 229668,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 217512,
+     "frames": 183,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 197217,
+     "frames": 165,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 36000,
+     "frames": 30,
+     "stall_ms": 531.399
+    },
+    {
+     "t": 1785110982,
+     "bytes": 74295,
+     "frames": 63,
+     "stall_ms": 815.677
+    },
+    {
+     "t": 1785110983,
+     "bytes": 220173,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 218190,
+     "frames": 184,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 218034,
+     "frames": 183,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 216678,
+     "frames": 181,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 218712,
+     "frames": 184,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 225234,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 220883,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 211617,
+     "frames": 177,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 216573,
+     "frames": 182,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 220017,
+     "frames": 184,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 232851,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 219912,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 215373,
+     "frames": 181,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 217095,
+     "frames": 182,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 215478,
+     "frames": 180,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 211095,
+     "frames": 177,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 217251,
+     "frames": 183,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 234239,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 224295,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 208695,
+     "frames": 175,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 215895,
+     "frames": 181,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 219756,
+     "frames": 184,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 216990,
+     "frames": 183,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 223178,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 218139,
+     "frames": 182,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 212556,
+     "frames": 178,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 223439,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 211095,
+     "frames": 177,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 208539,
+     "frames": 174,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 116139,
+     "frames": 97,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 34800,
+     "frames": 29,
+     "stall_ms": 584.768
+    },
+    {
+     "t": 1785111014,
+     "bytes": 132156,
+     "frames": 111,
+     "stall_ms": 819.289
+    },
+    {
+     "t": 1785111015,
+     "bytes": 208695,
+     "frames": 175,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 208956,
+     "frames": 175,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 216417,
+     "frames": 181,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 217512,
+     "frames": 183,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 208956,
+     "frames": 175,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 209895,
+     "frames": 176,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 213683,
+     "frames": 179,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 214434,
+     "frames": 180,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 211022,
+     "frames": 177,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 209895,
+     "frames": 176,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 213495,
+     "frames": 179,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 201756,
+     "frames": 169,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 215634,
+     "frames": 181,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 212034,
+     "frames": 178,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 211617,
+     "frames": 177,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 209112,
+     "frames": 176,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 213495,
+     "frames": 179,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 215739,
+     "frames": 180,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 203300,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 30000,
+     "frames": 25,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-eu-central-r7-s4",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "eu-central",
+   "start_unix_ms": 1785110975808,
+   "startup_ms": 1822.495,
+   "stall_count": 4,
+   "stalled_ms": 2752.578,
+   "jitter_ms": 18.65371626837667,
+   "e2e_p50_ms": 301,
+   "e2e_p95_ms": 347,
+   "bytes": 11036322,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110977,
+     "bytes": 84761,
+     "frames": 72,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110978,
+     "bytes": 234729,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 205283,
+     "frames": 172,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 187617,
+     "frames": 157,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 29478,
+     "frames": 25,
+     "stall_ms": 530.486
+    },
+    {
+     "t": 1785110982,
+     "bytes": 67617,
+     "frames": 57,
+     "stall_ms": 829.381
+    },
+    {
+     "t": 1785110983,
+     "bytes": 203217,
+     "frames": 170,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 211095,
+     "frames": 177,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 200973,
+     "frames": 169,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 214256,
+     "frames": 181,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 215739,
+     "frames": 180,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 211356,
+     "frames": 177,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 216573,
+     "frames": 182,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 218744,
+     "frames": 183,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 210156,
+     "frames": 176,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 206451,
+     "frames": 174,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 209634,
+     "frames": 176,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 205773,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 203634,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 210834,
+     "frames": 177,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 204312,
+     "frames": 172,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 210417,
+     "frames": 176,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 204344,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 204417,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 215634,
+     "frames": 181,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 214934,
+     "frames": 182,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 207912,
+     "frames": 175,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 206556,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 207495,
+     "frames": 174,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 217512,
+     "frames": 183,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 209478,
+     "frames": 175,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 206295,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 202434,
+     "frames": 170,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 203478,
+     "frames": 170,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 196539,
+     "frames": 164,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 112278,
+     "frames": 94,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 29666,
+     "frames": 25,
+     "stall_ms": 582.538
+    },
+    {
+     "t": 1785111014,
+     "bytes": 133356,
+     "frames": 112,
+     "stall_ms": 810.173
+    },
+    {
+     "t": 1785111015,
+     "bytes": 204678,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 206817,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 202883,
+     "frames": 170,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 201912,
+     "frames": 170,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 200817,
+     "frames": 168,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 209634,
+     "frames": 176,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 202622,
+     "frames": 170,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 201756,
+     "frames": 169,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 203561,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 207005,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 206973,
+     "frames": 174,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 206295,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 200712,
+     "frames": 169,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 203895,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 201683,
+     "frames": 169,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 214695,
+     "frames": 180,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 196956,
+     "frames": 165,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 202695,
+     "frames": 170,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 200556,
+     "frames": 168,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 25200,
+     "frames": 21,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-eu-central-r7-s5",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "eu-central",
+   "start_unix_ms": 1785110975808,
+   "startup_ms": 2110.495,
+   "stall_count": 4,
+   "stalled_ms": 2727.893,
+   "jitter_ms": 17.78458476949673,
+   "e2e_p50_ms": 300,
+   "e2e_p95_ms": 348,
+   "bytes": 12157251,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110977,
+     "bytes": 13878,
+     "frames": 12,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110978,
+     "bytes": 242658,
+     "frames": 207,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 232956,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 208329,
+     "frames": 176,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 32400,
+     "frames": 27,
+     "stall_ms": 535.3
+    },
+    {
+     "t": 1785110982,
+     "bytes": 69078,
+     "frames": 58,
+     "stall_ms": 802.289
+    },
+    {
+     "t": 1785110983,
+     "bytes": 230817,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 228417,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 227373,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 228573,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 243912,
+     "frames": 205,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 245112,
+     "frames": 206,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 231234,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 223929,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 230483,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 223022,
+     "frames": 187,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 230973,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 231495,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 228417,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 228834,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 230034,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 230712,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 227634,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 227112,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 236556,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 234834,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 231756,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 226956,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 225129,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 234729,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 228573,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 225495,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 221895,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 242295,
+     "frames": 203,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 225651,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 128295,
+     "frames": 108,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 40278,
+     "frames": 34,
+     "stall_ms": 581.403
+    },
+    {
+     "t": 1785111014,
+     "bytes": 148434,
+     "frames": 125,
+     "stall_ms": 808.901
+    },
+    {
+     "t": 1785111015,
+     "bytes": 224295,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 228417,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 227144,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 229356,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 231651,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 228051,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 224817,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 229095,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 224295,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 226017,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 221634,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 243912,
+     "frames": 205,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 236973,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 226278,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 223356,
+     "frames": 187,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 226017,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 227478,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 226851,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 225756,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 27600,
+     "frames": 23,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-eu-central-r7-s6",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "eu-central",
+   "start_unix_ms": 1785110975808,
+   "startup_ms": 2215.556,
+   "stall_count": 4,
+   "stalled_ms": 2742.421,
+   "jitter_ms": 18.081224719832964,
+   "e2e_p50_ms": 300,
+   "e2e_p95_ms": 347,
+   "bytes": 11008845,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110978,
+     "bytes": 228519,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 223773,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 192051,
+     "frames": 162,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 33266,
+     "frames": 28,
+     "stall_ms": 535.908
+    },
+    {
+     "t": 1785110982,
+     "bytes": 66417,
+     "frames": 56,
+     "stall_ms": 799.083
+    },
+    {
+     "t": 1785110983,
+     "bytes": 205095,
+     "frames": 172,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 208434,
+     "frames": 175,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 209373,
+     "frames": 176,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 208017,
+     "frames": 174,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 208956,
+     "frames": 175,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 211773,
+     "frames": 178,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 209112,
+     "frames": 176,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 209634,
+     "frames": 176,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 205961,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 208695,
+     "frames": 175,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 207495,
+     "frames": 174,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 211512,
+     "frames": 178,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 211356,
+     "frames": 177,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 206295,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 210573,
+     "frames": 177,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 203634,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 207234,
+     "frames": 174,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 207234,
+     "frames": 174,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 214017,
+     "frames": 179,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 202590,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 212817,
+     "frames": 178,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 205878,
+     "frames": 172,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 213495,
+     "frames": 179,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 205773,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 221112,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 209634,
+     "frames": 176,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 202800,
+     "frames": 169,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 207495,
+     "frames": 174,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 204239,
+     "frames": 172,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 106800,
+     "frames": 89,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 34539,
+     "frames": 29,
+     "stall_ms": 583.223
+    },
+    {
+     "t": 1785111014,
+     "bytes": 126678,
+     "frames": 106,
+     "stall_ms": 824.207
+    },
+    {
+     "t": 1785111015,
+     "bytes": 203634,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 204834,
+     "frames": 172,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 209895,
+     "frames": 176,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 212817,
+     "frames": 178,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 207078,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 201756,
+     "frames": 169,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 206556,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 199356,
+     "frames": 167,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 206817,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 208205,
+     "frames": 174,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 203561,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 203634,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 206483,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 206817,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 204729,
+     "frames": 173,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 205356,
+     "frames": 172,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 205095,
+     "frames": 172,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 203895,
+     "frames": 171,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 220851,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 25200,
+     "frames": 21,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-eu-central-r7-s7",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "eu-central",
+   "start_unix_ms": 1785110975808,
+   "startup_ms": 2381.424,
+   "stall_count": 4,
+   "stalled_ms": 2777.718,
+   "jitter_ms": 15.355678857782344,
+   "e2e_p50_ms": 301,
+   "e2e_p95_ms": 350,
+   "bytes": 11587611,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110978,
+     "bytes": 193563,
+     "frames": 165,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 224556,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 201912,
+     "frames": 170,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 36678,
+     "frames": 31,
+     "stall_ms": 539.148
+    },
+    {
+     "t": 1785110982,
+     "bytes": 67200,
+     "frames": 56,
+     "stall_ms": 815.133
+    },
+    {
+     "t": 1785110983,
+     "bytes": 216417,
+     "frames": 181,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 231161,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 236712,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 211856,
+     "frames": 179,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 232434,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 218973,
+     "frames": 184,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 220278,
+     "frames": 184,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 230712,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 215895,
+     "frames": 181,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 220434,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 221217,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 218973,
+     "frames": 184,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 221822,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 225078,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 218556,
+     "frames": 183,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 233790,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 235095,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 230900,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 215634,
+     "frames": 181,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 222573,
+     "frames": 187,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 218973,
+     "frames": 184,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 216573,
+     "frames": 182,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 220695,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 218868,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 220434,
+     "frames": 185,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 216312,
+     "frames": 182,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 221895,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 209217,
+     "frames": 175,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 217095,
+     "frames": 182,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 115617,
+     "frames": 97,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 26400,
+     "frames": 22,
+     "stall_ms": 595.891
+    },
+    {
+     "t": 1785111014,
+     "bytes": 139878,
+     "frames": 117,
+     "stall_ms": 827.546
+    },
+    {
+     "t": 1785111015,
+     "bytes": 222834,
+     "frames": 187,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 212556,
+     "frames": 178,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 212973,
+     "frames": 179,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 214278,
+     "frames": 179,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 216573,
+     "frames": 182,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 214017,
+     "frames": 179,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 217356,
+     "frames": 182,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 213944,
+     "frames": 179,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 215217,
+     "frames": 180,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 214278,
+     "frames": 179,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 213756,
+     "frames": 179,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 211878,
+     "frames": 177,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 208017,
+     "frames": 174,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 232851,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 216939,
+     "frames": 181,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 236034,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 217095,
+     "frames": 182,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 214883,
+     "frames": 180,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 213756,
+     "frames": 179,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 24000,
+     "frames": 20,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-eu-central-r7-s8",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "eu-central",
+   "start_unix_ms": 1785110975808,
+   "startup_ms": 2294.414,
+   "stall_count": 4,
+   "stalled_ms": 2735.599,
+   "jitter_ms": 16.882759099228277,
+   "e2e_p50_ms": 300,
+   "e2e_p95_ms": 345,
+   "bytes": 12241372,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110978,
+     "bytes": 207441,
+     "frames": 177,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 234417,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 212034,
+     "frames": 178,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 34539,
+     "frames": 29,
+     "stall_ms": 531.713
+    },
+    {
+     "t": 1785110982,
+     "bytes": 72678,
+     "frames": 61,
+     "stall_ms": 805.901
+    },
+    {
+     "t": 1785110983,
+     "bytes": 241878,
+     "frames": 202,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 235512,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 234051,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 231495,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 242451,
+     "frames": 204,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 229617,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 237234,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 236139,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 232695,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 229773,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 233895,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 238173,
+     "frames": 200,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 227217,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 230817,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 243390,
+     "frames": 205,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 236973,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 231683,
+     "frames": 194,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 239112,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 230139,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 235095,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 234156,
+     "frames": 196,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 235356,
+     "frames": 197,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 228156,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 232173,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 236973,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 228834,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 229251,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 227373,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 227478,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 127022,
+     "frames": 107,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 31200,
+     "frames": 26,
+     "stall_ms": 583.28
+    },
+    {
+     "t": 1785111014,
+     "bytes": 146295,
+     "frames": 123,
+     "stall_ms": 814.705
+    },
+    {
+     "t": 1785111015,
+     "bytes": 230556,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 222417,
+     "frames": 186,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 237234,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 228156,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 225944,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 230295,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 237234,
+     "frames": 199,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 228678,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 227634,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 228156,
+     "frames": 191,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 224817,
+     "frames": 188,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 227217,
+     "frames": 190,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 229095,
+     "frames": 192,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 230483,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 231078,
+     "frames": 193,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 235773,
+     "frames": 198,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 237129,
+     "frames": 200,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 233144,
+     "frames": 195,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 226278,
+     "frames": 189,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 27339,
+     "frames": 23,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "webrtc-eu-central-r7-s9",
+   "run_id": "smoke.webrtc.mobile-3g.r2.1785110975",
+   "protocol": "webrtc",
+   "region": "eu-central",
+   "start_unix_ms": 1785110975808,
+   "startup_ms": 2150.996,
+   "stall_count": 4,
+   "stalled_ms": 2745.3239999999996,
+   "jitter_ms": 21.722565166903458,
+   "e2e_p50_ms": 301,
+   "e2e_p95_ms": 350,
+   "bytes": 9905383,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110977,
+     "bytes": 4800,
+     "frames": 4,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110978,
+     "bytes": 236241,
+     "frames": 201,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110979,
+     "bytes": 204312,
+     "frames": 172,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110980,
+     "bytes": 175878,
+     "frames": 147,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110981,
+     "bytes": 32066,
+     "frames": 27,
+     "stall_ms": 530.602
+    },
+    {
+     "t": 1785110982,
+     "bytes": 57600,
+     "frames": 48,
+     "stall_ms": 810.991
+    },
+    {
+     "t": 1785110983,
+     "bytes": 186312,
+     "frames": 157,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110984,
+     "bytes": 186417,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110985,
+     "bytes": 185739,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110986,
+     "bytes": 184956,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110987,
+     "bytes": 189756,
+     "frames": 159,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110988,
+     "bytes": 185217,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110989,
+     "bytes": 189756,
+     "frames": 159,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110990,
+     "bytes": 185739,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110991,
+     "bytes": 183912,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110992,
+     "bytes": 186083,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110993,
+     "bytes": 189756,
+     "frames": 159,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110994,
+     "bytes": 185373,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110995,
+     "bytes": 183546,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110996,
+     "bytes": 185217,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110997,
+     "bytes": 185634,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110998,
+     "bytes": 188190,
+     "frames": 159,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110999,
+     "bytes": 191634,
+     "frames": 161,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111000,
+     "bytes": 184361,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111001,
+     "bytes": 187356,
+     "frames": 157,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111002,
+     "bytes": 182744,
+     "frames": 153,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111003,
+     "bytes": 191478,
+     "frames": 160,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111004,
+     "bytes": 184017,
+     "frames": 154,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111005,
+     "bytes": 189234,
+     "frames": 159,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111006,
+     "bytes": 188295,
+     "frames": 158,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111007,
+     "bytes": 186156,
+     "frames": 156,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111008,
+     "bytes": 181356,
+     "frames": 152,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111009,
+     "bytes": 198156,
+     "frames": 166,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111010,
+     "bytes": 184956,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111011,
+     "bytes": 183078,
+     "frames": 153,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111012,
+     "bytes": 93600,
+     "frames": 78,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111013,
+     "bytes": 27600,
+     "frames": 23,
+     "stall_ms": 594.731
+    },
+    {
+     "t": 1785111014,
+     "bytes": 116139,
+     "frames": 97,
+     "stall_ms": 809
+    },
+    {
+     "t": 1785111015,
+     "bytes": 187022,
+     "frames": 157,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111016,
+     "bytes": 181095,
+     "frames": 152,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111017,
+     "bytes": 183839,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111018,
+     "bytes": 180939,
+     "frames": 151,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111019,
+     "bytes": 185478,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111020,
+     "bytes": 181512,
+     "frames": 153,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111021,
+     "bytes": 179895,
+     "frames": 151,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111022,
+     "bytes": 184434,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111023,
+     "bytes": 177078,
+     "frames": 148,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111024,
+     "bytes": 187617,
+     "frames": 157,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111025,
+     "bytes": 183422,
+     "frames": 154,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111026,
+     "bytes": 188556,
+     "frames": 158,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111027,
+     "bytes": 215373,
+     "frames": 181,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111028,
+     "bytes": 180834,
+     "frames": 152,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111029,
+     "bytes": 177683,
+     "frames": 149,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111030,
+     "bytes": 200556,
+     "frames": 168,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111031,
+     "bytes": 184017,
+     "frames": 154,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111032,
+     "bytes": 179217,
+     "frames": 150,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111033,
+     "bytes": 184956,
+     "frames": 155,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785111034,
+     "bytes": 19200,
+     "frames": 16,
+     "stall_ms": 0
+    }
+   ]
+  }
+ ]
+}

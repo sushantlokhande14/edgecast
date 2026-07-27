@@ -1,0 +1,3739 @@
+{
+ "matrix": "smoke",
+ "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+ "protocol": "hls",
+ "profile": "mobile-4g",
+ "profile_def": {
+  "name": "mobile-4g",
+  "apply": {
+   "delay_ms": 60,
+   "jitter_ms": 15,
+   "loss_pct": 0.5,
+   "rate_kbit": 12000
+  }
+ },
+ "repetition": 1,
+ "started_unix_ms": 1785110686031,
+ "warmup_s": 10,
+ "measure_s": 45,
+ "sessions": [
+  {
+   "id": "hls-us-east-r4-s0",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785110686032,
+   "startup_ms": 2671.509,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 390.2170283000265,
+   "e2e_p50_ms": 1139.828,
+   "e2e_p95_ms": 2848.916,
+   "bytes": 4200000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110687,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110689,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110691,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110695,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110698,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110700,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110702,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110704,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110706,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110708,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110711,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110712,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110714,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110716,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110718,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110720,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110722,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110724,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110726,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110734,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110736,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110738,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110741,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r4-s1",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785110686032,
+   "startup_ms": 2077.31,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 376.72597258325277,
+   "e2e_p50_ms": 1295.693,
+   "e2e_p95_ms": 2855.018,
+   "bytes": 4200000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110687,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110689,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110691,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110695,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110698,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110700,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110702,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110705,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110706,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110708,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110710,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110712,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110714,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110716,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110719,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110721,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110722,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110724,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110726,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110734,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110736,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110738,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110740,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r4-s2",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785110686032,
+   "startup_ms": 2098.938,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 327.61490194918633,
+   "e2e_p50_ms": 1223.504,
+   "e2e_p95_ms": 2858.221,
+   "bytes": 4350000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110687,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110689,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110691,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110694,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110698,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110700,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110702,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110704,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110706,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110708,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110710,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110712,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110714,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110717,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110718,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110721,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110723,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110725,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110726,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110734,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110736,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110738,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110740,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110744,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r4-s3",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785110686032,
+   "startup_ms": 2247.181,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 436.0283970587529,
+   "e2e_p50_ms": 1174.741,
+   "e2e_p95_ms": 2807.297,
+   "bytes": 4350000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110687,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110689,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110690,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110694,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110698,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110700,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110702,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110704,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110706,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110708,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110710,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110713,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110714,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110716,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110718,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110720,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110722,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110724,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110726,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110735,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110736,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110738,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110740,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110744,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r4-s4",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785110686032,
+   "startup_ms": 2163.232,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 348.1809143068968,
+   "e2e_p50_ms": 1207.928,
+   "e2e_p95_ms": 2926.993,
+   "bytes": 4200000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110687,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110689,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110691,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110695,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110698,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110700,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110702,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110704,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110706,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110709,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110710,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110712,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110714,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110716,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110718,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110720,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110723,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110724,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110726,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110734,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110736,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110738,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110740,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r4-s5",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785110686032,
+   "startup_ms": 2085.48,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 365.754204867119,
+   "e2e_p50_ms": 1173.185,
+   "e2e_p95_ms": 2859.336,
+   "bytes": 4350000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110687,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110689,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110690,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110694,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110698,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110700,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110702,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110705,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110706,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110708,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110710,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110713,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110714,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110716,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110718,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110720,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110722,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110724,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110726,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110734,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110736,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110738,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110740,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110744,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r4-s6",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785110686032,
+   "startup_ms": 2414.269,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 379.65029173044144,
+   "e2e_p50_ms": 1271.9,
+   "e2e_p95_ms": 2946.443,
+   "bytes": 4200000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110687,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110689,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110691,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110695,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110698,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110700,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110702,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110704,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110706,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110708,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110710,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110712,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110715,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110716,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110719,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110720,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110722,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110725,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110726,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110734,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110736,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110738,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110740,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r4-s7",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785110686032,
+   "startup_ms": 2041.384,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 354.0976959344031,
+   "e2e_p50_ms": 1183.667,
+   "e2e_p95_ms": 2784.28,
+   "bytes": 4200000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110687,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110689,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110690,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110695,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110698,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110700,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110702,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110704,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110706,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110708,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110710,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110712,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110714,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110716,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110718,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110720,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110722,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110724,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110726,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110734,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110736,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110738,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110740,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r4-s8",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785110686032,
+   "startup_ms": 2290.029,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 401.3177133590091,
+   "e2e_p50_ms": 1288.55,
+   "e2e_p95_ms": 3038.251,
+   "bytes": 4200000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110687,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110689,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110691,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110695,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110699,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110700,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110702,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110704,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110707,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110708,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110711,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110712,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110715,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110716,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110718,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110720,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110722,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110724,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110726,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110734,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110736,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110738,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110740,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-us-east-r4-s9",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "us-east",
+   "start_unix_ms": 1785110686032,
+   "startup_ms": 2681.612,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 391.92904623933197,
+   "e2e_p50_ms": 1163.258,
+   "e2e_p95_ms": 3045.574,
+   "bytes": 4200000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110687,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110689,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110691,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110695,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110699,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110700,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110702,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110704,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110706,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110708,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110710,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110712,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110714,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110716,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110718,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110720,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110722,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110725,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110726,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110734,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110736,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110738,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110740,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r4-s0",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785110686033,
+   "startup_ms": 2845.616,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 350.11500140128516,
+   "e2e_p50_ms": 1571.788,
+   "e2e_p95_ms": 3060.049,
+   "bytes": 4200000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110687,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110690,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110691,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110695,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110699,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110701,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110703,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110704,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110707,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110709,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110711,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110712,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110714,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110717,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110719,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110721,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110723,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110725,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110727,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110734,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110736,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110738,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110740,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r4-s1",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785110686033,
+   "startup_ms": 2661.05,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 517.8763772454663,
+   "e2e_p50_ms": 1653.139,
+   "e2e_p95_ms": 3595.357,
+   "bytes": 4200000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110687,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110689,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110691,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110695,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110699,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110701,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110703,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110704,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110707,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110709,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110711,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110712,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110715,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110716,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110719,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110721,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110723,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110725,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110727,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110731,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110734,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110737,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110738,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110740,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r4-s2",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785110686033,
+   "startup_ms": 2681.576,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 427.1959516551654,
+   "e2e_p50_ms": 1555.38,
+   "e2e_p95_ms": 2905.294,
+   "bytes": 4200000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110687,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110689,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110691,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110695,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110698,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110700,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110703,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110705,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110706,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110708,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110711,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110713,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110715,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110717,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110718,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110721,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110723,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110725,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110726,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110735,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110736,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110738,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110740,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r4-s3",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785110686033,
+   "startup_ms": 3078.597,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 465.2803794718707,
+   "e2e_p50_ms": 1500.716,
+   "e2e_p95_ms": 3557.748,
+   "bytes": 4200000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110689,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110690,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110691,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110695,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110699,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110700,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110702,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110704,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110707,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110709,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110711,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110712,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110715,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110716,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110718,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110720,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110723,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110725,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110727,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110734,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110736,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110739,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110740,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r4-s4",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785110686033,
+   "startup_ms": 3247.921,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 313.7230310919568,
+   "e2e_p50_ms": 1625.005,
+   "e2e_p95_ms": 3264.361,
+   "bytes": 4200000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110687,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110689,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110691,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110692,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110695,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110698,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110701,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110703,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110704,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110707,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110709,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110711,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110713,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110715,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110717,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110719,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110721,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110722,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110724,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110727,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110734,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110736,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110739,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110740,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r4-s5",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785110686033,
+   "startup_ms": 2829.379,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 358.08099247563985,
+   "e2e_p50_ms": 1575.746,
+   "e2e_p95_ms": 3137.845,
+   "bytes": 4200000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110687,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110690,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110691,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110695,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110698,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110700,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110702,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110705,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110706,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110709,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110711,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110712,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110715,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110717,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110719,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110721,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110723,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110725,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110727,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110735,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110736,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110738,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110740,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r4-s6",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785110686033,
+   "startup_ms": 3088.976,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 394.664438556305,
+   "e2e_p50_ms": 1566.5,
+   "e2e_p95_ms": 3389.536,
+   "bytes": 4200000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110689,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110690,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110691,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110696,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110699,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110701,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110703,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110704,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110706,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110709,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110710,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110713,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110715,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110717,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110719,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110721,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110723,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110725,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110726,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110734,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110736,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110738,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110741,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r4-s7",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785110686033,
+   "startup_ms": 2862.309,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 437.1499147613726,
+   "e2e_p50_ms": 1469.857,
+   "e2e_p95_ms": 3506.032,
+   "bytes": 4200000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110687,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110690,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110691,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110695,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110699,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110701,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110702,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110705,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110706,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110708,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110710,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110713,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110715,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110716,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110719,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110721,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110723,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110725,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110727,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110734,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110736,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110738,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110740,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r4-s8",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785110686033,
+   "startup_ms": 2910.109,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 339.3048441119999,
+   "e2e_p50_ms": 1523.249,
+   "e2e_p95_ms": 3048.874,
+   "bytes": 4200000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110687,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110690,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110691,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110695,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110699,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110701,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110703,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110704,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110706,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110708,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110711,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110713,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110715,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110717,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110719,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110721,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110722,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110724,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110726,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110734,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110736,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110738,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110740,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110743,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  },
+  {
+   "id": "hls-eu-central-r4-s9",
+   "run_id": "smoke.hls.mobile-4g.r1.1785110686",
+   "protocol": "hls",
+   "region": "eu-central",
+   "start_unix_ms": 1785110686033,
+   "startup_ms": 2894.795,
+   "stall_count": 0,
+   "stalled_ms": 0,
+   "jitter_ms": 450.64797927789454,
+   "e2e_p50_ms": 1576.81,
+   "e2e_p95_ms": 3118.657,
+   "bytes": 4200000,
+   "errors": 0,
+   "seconds": [
+    {
+     "t": 1785110687,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110688,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110690,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110691,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110693,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110695,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110698,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110701,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110702,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110704,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110707,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110709,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110710,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110712,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110715,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110716,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110719,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110720,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110723,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110725,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110726,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110730,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110732,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110734,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110737,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110739,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110740,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    },
+    {
+     "t": 1785110742,
+     "bytes": 150000,
+     "frames": 1,
+     "stall_ms": 0
+    }
+   ]
+  }
+ ]
+}
