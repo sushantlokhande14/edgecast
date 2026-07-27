@@ -17,7 +17,11 @@
 # tooling scratch (node modules pulled into the mounted dir by the shot runner)
 /tools/shots/node_modules/
 /tools/shots/package*.json
-/docs/report/report.html
+
+# The written report and its source are kept outside this repository.
+/tools/report/
+/docs/report/
+*.pdf
 
 # grafana/prometheus local state (mounted volumes)
 /deploy/grafana/data/
