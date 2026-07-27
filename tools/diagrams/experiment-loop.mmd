@@ -1,0 +1,21 @@
+sequenceDiagram
+    autonumber
+    participant E as expctl
+    participant L as link emulators<br/>(inside each load generator)
+    participant G as load generators
+    participant P as Prometheus
+
+    loop for each (profile, protocol, repetition)
+        E->>L: POST /netem/apply {delay, jitter, loss, rate}
+        E->>G: POST /sessions/restart {run_id}
+        Note over G: fresh sessions, so STARTUP is<br/>measured under this profile
+        opt timeline profiles (burst-loss, degrading)
+            E->>L: POST /netem/apply at t=15s, 30s, 45s
+        end
+        E->>E: warmup 10s (discarded) + measure 50s
+        E->>G: GET /sessions/results?run_id
+        G-->>E: per-session JSON + per-second timeline
+        E->>L: POST /netem/clear
+    end
+    E->>E: aggregate to summary.csv + summary.md
+    G-->>P: /metrics scraped every 5s throughout

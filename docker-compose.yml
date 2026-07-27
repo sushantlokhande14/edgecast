@@ -148,12 +148,23 @@ services:
       GF_AUTH_ANONYMOUS_ENABLED: "true"
       GF_AUTH_ANONYMOUS_ORG_ROLE: Admin
       GF_AUTH_DISABLE_LOGIN_FORM: "true"
+      # Server-side PNG rendering, used to snapshot dashboards for reports:
+      #   curl -o shot.png "http://localhost:3000/render/d/<uid>?width=1600&height=1400&kiosk"
+      GF_RENDERING_SERVER_URL: http://renderer:8081/render
+      GF_RENDERING_CALLBACK_URL: http://grafana:3000/
+      GF_LOG_FILTERS: rendering:debug
     volumes:
       - ./deploy/grafana/provisioning:/etc/grafana/provisioning:ro
       - ./deploy/grafana/dashboards:/var/lib/grafana/dashboards:ro
     ports:
       - "3000:3000"
     depends_on: [prometheus]
+
+  renderer:
+    image: grafana/grafana-image-renderer:3.11.6
+    restart: unless-stopped
+    environment:
+      ENABLE_METRICS: "true"
 
   # ---- Experiment controller (run on demand) ----
   expctl:

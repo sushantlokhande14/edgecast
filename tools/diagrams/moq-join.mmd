@@ -1,0 +1,25 @@
+sequenceDiagram
+    autonumber
+    participant Sub as moq-sub (eu-central)
+    participant Edge as relay eu-central
+    participant Origin as relay us-west (origin)
+    participant Pub as moq-pub
+
+    Pub->>Origin: SETUP(publisher) + ANNOUNCE cam0
+    Origin-->>Pub: ANNOUNCE_OK
+    Note over Pub,Origin: each group (1s GOP) rides its own QUIC uni stream
+
+    Sub->>Edge: SETUP(subscriber) + SUBSCRIBE cam0
+    Note over Edge: track unknown locally
+    Edge->>Origin: SETUP(relay) + SUBSCRIBE cam0
+    Origin-->>Edge: SUBSCRIBE_OK + cached group from its keyframe
+    Edge-->>Sub: SUBSCRIBE_OK + cached group from its keyframe
+    Note over Sub: playback starts without waiting<br/>for the next keyframe
+
+    loop live fanout
+        Pub->>Origin: group g objects
+        Origin-->>Edge: forwarded as they arrive
+        Edge-->>Sub: forwarded as they arrive
+    end
+
+    Note over Edge: slow subscriber?<br/>drop OLDEST WHOLE GROUP,<br/>never partial groups

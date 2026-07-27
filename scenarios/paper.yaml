@@ -1,0 +1,51 @@
+# Paper matrix: the full set of network conditions at 3 repetitions, sized to
+# run in roughly 80 minutes. This is the matrix behind the report figures.
+# 8 profiles x 3 protocols x 3 reps = 72 runs.
+name: paper
+warmup_seconds: 10
+measure_seconds: 50
+repetitions: 3
+
+protocols:
+  - name: moq
+    targets:
+      - moq-sub-us-west:8080
+      - moq-sub-us-east:8080
+      - moq-sub-eu-central:8080
+      - moq-sub-ap-south:8080
+      - moq-sub-ap-east:8080
+  - name: webrtc
+    targets:
+      - webrtc-sub-a:8080
+      - webrtc-sub-b:8080
+  - name: hls
+    targets:
+      - hls-client-a:8080
+      - hls-client-b:8080
+
+profiles:
+  - name: baseline
+    apply: { delay_ms: 5 }
+  - name: home-wifi
+    apply: { delay_ms: 20, jitter_ms: 5, loss_pct: 0.1, rate_kbit: 50000 }
+  - name: mobile-4g
+    apply: { delay_ms: 60, jitter_ms: 15, loss_pct: 0.5, rate_kbit: 12000 }
+  - name: mobile-3g
+    apply: { delay_ms: 150, jitter_ms: 40, loss_pct: 1.5, rate_kbit: 2000 }
+  - name: lossy
+    apply: { delay_ms: 40, jitter_ms: 10, loss_pct: 3, rate_kbit: 20000 }
+  - name: satellite
+    apply: { delay_ms: 300, jitter_ms: 20, loss_pct: 0.5, rate_kbit: 15000 }
+  - name: burst-loss
+    apply: { delay_ms: 30, jitter_ms: 5, rate_kbit: 20000 }
+    timeline:
+      - { at_seconds: 15, apply: { delay_ms: 30, jitter_ms: 5, loss_pct: 5, rate_kbit: 20000 } }
+      - { at_seconds: 27, apply: { delay_ms: 30, jitter_ms: 5, rate_kbit: 20000 } }
+      - { at_seconds: 38, apply: { delay_ms: 30, jitter_ms: 5, loss_pct: 5, rate_kbit: 20000 } }
+      - { at_seconds: 50, apply: { delay_ms: 30, jitter_ms: 5, rate_kbit: 20000 } }
+  - name: degrading
+    apply: { delay_ms: 20, rate_kbit: 20000 }
+    timeline:
+      - { at_seconds: 15, apply: { delay_ms: 60, jitter_ms: 10, loss_pct: 0.5, rate_kbit: 8000 } }
+      - { at_seconds: 30, apply: { delay_ms: 100, jitter_ms: 25, loss_pct: 1, rate_kbit: 3000 } }
+      - { at_seconds: 45, apply: { delay_ms: 150, jitter_ms: 40, loss_pct: 2, rate_kbit: 1500 } }

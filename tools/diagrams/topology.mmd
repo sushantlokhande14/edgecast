@@ -1,0 +1,49 @@
+flowchart LR
+    classDef moq fill:#DBE4FF,stroke:#4C6EF5,stroke-width:2px,color:#1A1A1A
+    classDef rtc fill:#C3FAE8,stroke:#12B886,stroke-width:2px,color:#1A1A1A
+    classDef hls fill:#FFE8CC,stroke:#F76707,stroke-width:2px,color:#1A1A1A
+    classDef obs fill:#F1F3F5,stroke:#868E96,stroke-width:2px,color:#1A1A1A
+
+    subgraph MOQ["MoQ path: QUIC, one stream per group"]
+        direction LR
+        MP["moq-pub<br/>synthetic source + ABR"]:::moq
+        R0["relay us-west<br/>ORIGIN"]:::moq
+        R1["relay us-east<br/>RTT 35ms"]:::moq
+        R2["relay eu-central<br/>RTT 70ms"]:::moq
+        R3["relay ap-south<br/>RTT 110ms"]:::moq
+        R4["relay ap-east<br/>RTT 90ms"]:::moq
+        S["5 x moq-sub<br/>20 sessions each"]:::moq
+        MP -->|ANNOUNCE cam0| R0
+        R0 -->|pull-through| R1 & R2 & R3 & R4
+        R1 & R2 & R3 & R4 --> S
+        R0 --> S
+    end
+
+    subgraph RTC["WebRTC path: SRTP over UDP"]
+        direction LR
+        WP["webrtc-pub<br/>RTP 2500 kbps"]:::rtc
+        SFU["Pion SFU<br/>fanout"]:::rtc
+        WS["2 x webrtc-sub<br/>10 sessions each"]:::rtc
+        WP --> SFU --> WS
+    end
+
+    subgraph HLSP["HTTP path: TCP segments"]
+        direction LR
+        HO["hls-origin<br/>3-rendition ladder"]:::hls
+        HC["2 x hls-client<br/>10 ABR players each"]:::hls
+        HO --> HC
+    end
+
+    EX["expctl<br/>matrix runner"]:::obs
+    PROM["Prometheus<br/>5s scrape"]:::obs
+    GRAF["Grafana<br/>3 dashboards"]:::obs
+
+    EX -.->|"impairment + session restart over HTTP"| S & WS & HC
+    MOQ -.-> PROM
+    RTC -.-> PROM
+    HLSP -.-> PROM
+    PROM --> GRAF
+
+    style MOQ fill:#FFFFFF,stroke:#4C6EF5,stroke-width:2px
+    style RTC fill:#FFFFFF,stroke:#12B886,stroke-width:2px
+    style HLSP fill:#FFFFFF,stroke:#F76707,stroke-width:2px

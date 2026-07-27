@@ -12,8 +12,8 @@
       "id": 1, "type": "stat", "title": "Active sessions",
       "datasource": { "type": "prometheus", "uid": "prom" },
       "gridPos": { "h": 6, "w": 8, "x": 0, "y": 0 },
-      "fieldConfig": { "defaults": { "unit": "none" }, "overrides": [] },
-      "options": { "reduceOptions": { "calcs": ["lastNotNull"] }, "textMode": "value_and_name" },
+      "fieldConfig": { "defaults": { "unit": "none", "color": { "mode": "fixed", "fixedColor": "text" }, "thresholds": { "mode": "absolute", "steps": [{ "color": "text", "value": null }] } }, "overrides": [] },
+      "options": { "reduceOptions": { "calcs": ["lastNotNull"] }, "textMode": "value_and_name", "colorMode": "none" },
       "targets": [{ "refId": "A", "expr": "sum by (protocol) (edgecast_sub_sessions_active)", "legendFormat": "{{protocol}}" }]
     },
     {
